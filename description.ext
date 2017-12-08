@@ -1,0 +1,507 @@
+
+///////////// DEFAULT PARAMS /////////////////
+respawnOnStart = 0;
+
+
+/* ````````````````````````
+SHOP SYSTEM
+```````````````````````` */
+#include "HG\UI\HG_DialogsMaster.h"
+
+class RscTitles
+{
+    #include "HG\UI\Dialogs\HG_HUD.h"
+};
+
+class CfgClient
+{
+    #include "HG\Config\HG_Config.h"
+};
+
+class CfgFunctions 
+{
+    #include "HG\Functions\HG_Functions.h"
+    #include "functions\NML_Functions.h"
+};
+
+
+/* ````````````````````````
+SOUNDS
+```````````````````````````*/
+
+class CfgSounds
+{
+// List of sounds (.ogg files without the .ogg extension)
+sounds[] = {breath_suffocation_1,breath_suffocation_2,breath_suffocation_3,breath_gas_mask_suffocation,breath_toxic_air_in_1,breath_toxic_air_in_2,breath_toxic_air_in_3,breath_toxic_air_out_1,breath_toxic_air_out_2,breath_toxic_air_out_3,generator_work_1,mil_generator_work_1,meet_hello_1,meet_hello_2,meet_hello_3,bkg_day,bkg_evening,bkg_morning,bkg_night,Pachka_sigaret,hg_lock,hg_unlock,inv_open,inv_close,heartbeat_1};
+
+
+/* ```````````````````````````````
+
+ACTOR SOUNDS
+
+`````````````````````````````````` */
+
+class heartbeat_1
+{
+name = "heartbeat_1"; // Name for mission editor
+sound[] = {sound\character\player\health\heartbeat_1.ogg, 1, 1.0};
+titles[] = {};
+};
+
+
+class breath_suffocation_1
+{
+name = "breath_suffocation_1"; // Name for mission editor
+sound[] = {sound\character\player\player\health\breath_suffocation_1.ogg, 1, 1.0};
+titles[] = {};
+};
+
+class breath_suffocation_2
+{
+name = "breath_suffocation_2"; // Name for mission editor
+sound[] = {sound\character\player\breathe\breath_suffocation_2.ogg, 1, 1.0};
+titles[] = {};
+};
+
+class breath_suffocation_3
+{
+name = "breath_suffocation_3"; // Name for mission editor
+sound[] = {sound\character\player\breathe\breath_suffocation_3.ogg, 1, 1.0};
+titles[] = {};
+};
+
+class breath_gas_mask_suffocation
+{
+name = "breath_gas_mask_suffocation"; // Name for mission editor
+sound[] = {sound\character\player\breathe\breath_gas_mask_suffocation.ogg, 1, 1.0};
+titles[] = {};
+};
+
+class breath_toxic_air_in_1
+{
+name = "breath_toxic_air_in_1"; // Name for mission editor
+sound[] = {sound\character\player\breathe\breath_toxic_air_in_1.ogg, 1, 1.0};
+titles[] = {};
+};
+
+class breath_toxic_air_in_2
+{
+name = "breath_toxic_air_in_2"; // Name for mission editor
+sound[] = {sound\character\player\breathe\breath_toxic_air_in_2.ogg, 1, 1.0};
+titles[] = {};
+};
+
+class breath_toxic_air_in_3
+{
+name = "breath_toxic_air_in_3"; // Name for mission editor
+sound[] = {sound\character\player\breathe\breath_toxic_air_in_3.ogg, 1, 1.0};
+titles[] = {};
+};
+
+class breath_toxic_air_out_1
+{
+name = "breath_toxic_air_out_1"; // Name for mission editor
+sound[] = {sound\character\player\breathe\breath_toxic_air_out_1.ogg, 1, 1.0};
+titles[] = {};
+};
+
+class breath_toxic_air_out_2
+{
+name = "breath_toxic_air_out_2"; // Name for mission editor
+sound[] = {sound\character\player\breathe\breath_toxic_air_out_2.ogg, 1, 1.0};
+titles[] = {};
+};
+
+class breath_toxic_air_out_3
+{
+name = "breath_toxic_air_out_3"; // Name for mission editor
+sound[] = {sound\character\player\breathe\breath_toxic_air_out_3.ogg, 1, 1.0};
+titles[] = {};
+};
+
+class generator_work_1
+{
+name = "generator_work_1"; // Name for mission editor
+sound[] = {sound\ambient\object\generator_work_1.ogg, 1, 1.0};
+titles[] = {};
+};
+
+class mil_generator_work_1
+{
+name = "mil_generator_work_1"; // Name for mission editor
+sound[] = {sound\ambient\object\mil_generator_work_1.ogg, db-6, 1.0};
+titles[] = {};
+};
+
+
+/* ```````````````````````````````
+
+NPC TALKS
+
+`````````````````````````````````` */
+
+class meet_hello_1
+{
+name = "meet_hello_1"; // Name for mission editor
+sound[] = {sound\character\npc\wastelanders\Monakhino\guard_hello\meet_hello_1.ogg, db+5, 1.0};
+titles[] = {};
+};
+
+class meet_hello_2
+{
+name = "meet_hello_2"; // Name for mission editor
+sound[] = {sound\character\npc\wastelanders\Monakhino\guard_hello\meet_hello_2.ogg, db+5, 1.0};
+titles[] = {};
+};
+
+class meet_hello_3
+{
+name = "meet_hello_3"; // Name for mission editor
+sound[] = {sound\character\npc\wastelanders\Monakhino\guard_hello\meet_hello_3.ogg, db+5, 1.0};
+titles[] = {};
+};
+
+/* ```````````````````````````````
+
+BACKGROUND LOCATION SOUNDS
+
+`````````````````````````````````` */
+
+	class bkg_day
+		{
+			name = "bkg_day"; // Name for mission editor
+			sound[] = {sound\ambient\location\bkg_day.ogg, 1, 1.0};
+			titles[] = {};
+		};
+
+	class bkg_evening
+		{
+			name = "bkg_evening"; // Name for mission editor
+			sound[] = {sound\ambient\location\bkg_evening.ogg, 1, 1.0};
+			titles[] = {};
+		};
+
+	class bkg_morning
+		{
+			name = "bkg_morning"; // Name for mission editor
+			sound[] = {sound\ambient\location\bkg_morning.ogg, 1, 1.0};
+			titles[] = {};
+		};
+
+	class bkg_night
+		{
+			name = "bkg_night"; // Name for mission editor
+			sound[] = {sound\ambient\location\bkg_night.ogg, 1, 1.0};
+			titles[] = {};
+		};
+
+/* ```````````````````````````````
+
+RANDOM AMBIENT SOUNDS
+
+`````````````````````````````````` */
+	
+	class ambient_dog_4
+		{
+			name = "ambient_dog_4"; // Name for mission editor
+			sound[] = {sound\ambient\random\ambient_dog_4.ogg, 1, 1.0};
+			titles[] = {};
+		};
+	
+	class ambient_dog_5
+		{
+			name = "ambient_dog_5"; // Name for mission editor
+			sound[] = {sound\ambient\random\ambient_dog_5.ogg, 1, 1.0};
+			titles[] = {};
+		};
+	
+	class ambient_dog_6
+		{
+			name = "ambient_dog_6"; // Name for mission editor
+			sound[] = {sound\ambient\random\ambient_dog_6.ogg, 1, 1.0};
+			titles[] = {};
+		};
+	
+	class ambient_gunfire_1
+		{
+			name = "ambient_gunfire_1"; // Name for mission editor
+			sound[] = {sound\ambient\random\ambient_gunfire_1.ogg, 1, 1.0};
+			titles[] = {};
+		};
+	
+	class ambient_gunfire_5
+		{
+			name = "ambient_gunfire_5"; // Name for mission editor
+			sound[] = {sound\ambient\random\ambient_gunfire_5.ogg, 1, 1.0};
+			titles[] = {};
+		};
+	
+	class fog_ambient_gunfire_1
+		{
+			name = "fog_ambient_gunfire_1"; // Name for mission editor
+			sound[] = {sound\ambient\random\fog_ambient_gunfire_1.ogg, 1, 1.0};
+			titles[] = {};
+		};
+	
+	class fog_ambient_gunfire_7
+		{
+			name = "fog_ambient_gunfire_7"; // Name for mission editor
+			sound[] = {sound\ambient\random\fog_ambient_gunfire_7.ogg, 1, 1.0};
+			titles[] = {};
+		};
+	
+	class night_scream_3
+		{
+			name = "night_scream_3"; // Name for mission editor
+			sound[] = {sound\ambient\random\night_scream_3.ogg, 1, 1.0};
+			titles[] = {};
+		};
+	
+	class org_moan_1
+		{
+			name = "org_moan_1"; // Name for mission editor
+			sound[] = {sound\ambient\random\org_moan_1.ogg, 1, 1.0};
+			titles[] = {};
+		};
+	
+	class org_moan_3
+		{
+			name = "org_moan_3"; // Name for mission editor
+			sound[] = {sound\ambient\random\org_moan_3.ogg, 1, 1.0};
+			titles[] = {};
+		};
+	
+	class org_moan_5
+		{
+			name = "org_moan_5"; // Name for mission editor
+			sound[] = {sound\ambient\random\org_moan_5.ogg, 1, 1.0};
+			titles[] = {};
+		};
+	
+	class org_moan_6
+		{
+			name = "org_moan_6"; // Name for mission editor
+			sound[] = {sound\ambient\random\org_moan_6.ogg, 1, 1.0};
+			titles[] = {};
+		};
+	
+	class psy_voices_1_r
+		{
+			name = "psy_voices_1_r"; // Name for mission editor
+			sound[] = {sound\ambient\random\psy_voices_1_r.ogg, 1, 1.0};
+			titles[] = {};
+		};
+	
+	class rnd_dog3
+		{
+			name = "rnd_dog3"; // Name for mission editor
+			sound[] = {sound\ambient\random\rnd_dog3.ogg, 1, 1.0};
+			titles[] = {};
+		};
+	
+	class rnd_dog5
+		{
+			name = "rnd_dog5"; // Name for mission editor
+			sound[] = {sound\ambient\random\rnd_dog5.ogg, 1, 1.0};
+			titles[] = {};
+		};
+	
+	class rnd_dog6
+		{
+			name = "rnd_dog6"; // Name for mission editor
+			sound[] = {sound\ambient\random\rnd_dog6.ogg, 1, 1.0};
+			titles[] = {};
+		};
+	
+	class rnd_dog10
+		{
+			name = "rnd_dog10"; // Name for mission editor
+			sound[] = {sound\ambient\random\rnd_dog10.ogg, 1, 1.0};
+			titles[] = {};
+		};
+	
+	class rnd_helicopter_2
+		{
+			name = "rnd_helicopter_2"; // Name for mission editor
+			sound[] = {sound\ambient\random\rnd_helicopter_2.ogg, 1, 1.0};
+			titles[] = {};
+		};
+	
+	class rnd_insect_3
+		{
+			name = "rnd_insect_3"; // Name for mission editor
+			sound[] = {sound\ambient\random\rnd_insect_3.ogg, 1, 1.0};
+			titles[] = {};
+		};
+	
+	class rnd_insect_8
+		{
+			name = "rnd_insect_8"; // Name for mission editor
+			sound[] = {sound\ambient\random\rnd_insect_8.ogg, 1, 1.0};
+			titles[] = {};
+		};
+	
+	class rnd_krik7
+		{
+			name = "rnd_krik7"; // Name for mission editor
+			sound[] = {sound\ambient\random\rnd_krik7.ogg, 1, 1.0};
+			titles[] = {};
+		};
+	
+	class rnd_pdog3
+		{
+			name = "rnd_pdog3"; // Name for mission editor
+			sound[] = {sound\ambient\random\rnd_pdog3.ogg, 1, 1.0};
+			titles[] = {};
+		};
+	
+	class rnd_shooting_4
+		{
+			name = "rnd_shooting_4"; // Name for mission editor
+			sound[] = {sound\ambient\random\rnd_shooting_4.ogg, 1, 1.0};
+			titles[] = {};
+		};
+	
+	class rnd_shooting_7
+		{
+			name = "rnd_shooting_7"; // Name for mission editor
+			sound[] = {sound\ambient\random\rnd_shooting_7.ogg, 1, 1.0};
+			titles[] = {};
+		};
+
+/* ```````````````````````````````
+
+MUSIC
+
+`````````````````````````````````` */
+	class Pachka_sigaret
+		{
+			name = "Pachka_sigaret"; // Name for mission editor
+			sound[] = {sound\ambient\music\Pachka_sigaret.ogg, db+10, 1.0};
+			titles[] = {};
+		};		
+		
+// MONK LOUDSPEAKER //
+		
+	class 01_Radiomix
+		{
+			name = "01_Radiomix"; // Name for mission editor
+			sound[] = {sound\ambient\music\monk_loudspeakers\01_Radiomix.ogg, db+10, 1.0};
+			titles[] = {};
+		};
+		
+	class 02_Radiomix
+		{
+			name = "02_Radiomix"; // Name for mission editor
+			sound[] = {sound\ambient\music\monk_loudspeakers\02_Radiomix.ogg, db+10, 1.0};
+			titles[] = {};
+		};
+		
+	class 03_Radiomix
+		{
+			name = "03_Radiomix"; // Name for mission editor
+			sound[] = {sound\ambient\music\monk_loudspeakers\03_Radiomix.ogg, db+10, 1.0};
+			titles[] = {};
+		};
+		
+	class 04_Radiomix
+		{
+			name = "04_Radiomix"; // Name for mission editor
+			sound[] = {sound\ambient\music\monk_loudspeakers\04_Radiomix.ogg, db+10, 1.0};
+			titles[] = {};
+		};
+		
+	class 05_Radiomix
+		{
+			name = "05_Radiomix"; // Name for mission editor
+			sound[] = {sound\ambient\music\monk_loudspeakers\05_Radiomix.ogg, db+10, 1.0};
+			titles[] = {};
+		};
+		
+	class 06_Radiomix
+		{
+			name = "06_Radiomix"; // Name for mission editor
+			sound[] = {sound\ambient\music\monk_loudspeakers\06_Radiomix.ogg, db+10, 1.0};
+			titles[] = {};
+		};
+		
+	class 07_Radiomix
+		{
+			name = "07_Radiomix"; // Name for mission editor
+			sound[] = {sound\ambient\music\monk_loudspeakers\07_Radiomix.ogg, db+10, 1.0};
+			titles[] = {};
+		};
+		
+	class 08_Radiomix
+		{
+			name = "08_Radiomix"; // Name for mission editor
+			sound[] = {sound\ambient\music\monk_loudspeakers\08_Radiomix.ogg, db+10, 1.0};
+			titles[] = {};
+		};
+		
+	class 09_Radiomix
+		{
+			name = "09_Radiomix"; // Name for mission editor
+			sound[] = {sound\ambient\music\monk_loudspeakers\09_Radiomix.ogg, db+10, 1.0};
+			titles[] = {};
+		};
+		
+	class 10_Radiomix
+		{
+			name = "10_Radiomix"; // Name for mission editor
+			sound[] = {sound\ambient\music\monk_loudspeakers\10_Radiomix.ogg, db+10, 1.0};
+			titles[] = {};
+		};
+		
+	class 11_Radiomix
+		{
+			name = "11_Radiomix"; // Name for mission editor
+			sound[] = {sound\ambient\music\monk_loudspeakers\11_Radiomix.ogg, db+10, 1.0};
+			titles[] = {};
+		};		
+	
+	
+/* ```````````````````````````````
+
+HG Shop System
+
+`````````````````````````````````` */
+
+	class hg_lock
+		{
+			name = "Lock";
+			sound[] = {"HG\Sounds\lock.ogg",1,1};
+			titles[] = {};
+		};
+
+	class hg_unlock
+		{
+			name = "Unlock";
+			sound[] = {"HG\Sounds\unlock.ogg",1,1};
+			titles[] = {};
+		};
+
+/* ```````````````````````````````
+
+Inventory Sounds
+
+`````````````````````````````````` */
+		
+	class inv_open
+		{
+			name = "inv_open";
+			sound[] = {"\sound\character\player\inventory\inv_open.ogg",db+10,1};
+			titles[] = {};
+		};
+
+	class inv_close
+		{
+			name = "inv_close";
+			sound[] = {"\sound\character\player\inventory\inv_close.ogg",db+10,1};
+			titles[] = {};
+		};		
+		
+		
+		
+		
+};
