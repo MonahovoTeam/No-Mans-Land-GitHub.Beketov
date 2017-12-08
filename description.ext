@@ -21,7 +21,6 @@ class CfgClient
 class CfgFunctions 
 {
     #include "HG\Functions\HG_Functions.h"
-    #include "functions\NML_Functions.h"
 };
 
 
