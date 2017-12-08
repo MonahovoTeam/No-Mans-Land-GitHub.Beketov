@@ -31,7 +31,7 @@ SOUNDS
 class CfgSounds
 {
 // List of sounds (.ogg files without the .ogg extension)
-sounds[] = {breath_suffocation_1,breath_suffocation_2,breath_suffocation_3,breath_gas_mask_suffocation,breath_toxic_air_in_1,breath_toxic_air_in_2,breath_toxic_air_in_3,breath_toxic_air_out_1,breath_toxic_air_out_2,breath_toxic_air_out_3,generator_work_1,mil_generator_work_1,meet_hello_1,meet_hello_2,meet_hello_3,bkg_day,bkg_evening,bkg_morning,bkg_night,Pachka_sigaret,hg_lock,hg_unlock,inv_open,inv_close,heartbeat_1};
+sounds[] = {breath_suffocation_1,breath_suffocation_2,breath_suffocation_3,breath_gas_mask_suffocation,breath_toxic_air_in_1,breath_toxic_air_in_2,breath_toxic_air_in_3,breath_toxic_air_out_1,breath_toxic_air_out_2,breath_toxic_air_out_3,generator_work_1,mil_generator_work_1,meet_hello_1,meet_hello_2,meet_hello_3,bkg_day,bkg_evening,bkg_morning,bkg_night,hg_lock,hg_unlock,inv_open,inv_close,heartbeat_1};
 
 
 /* ```````````````````````````````
