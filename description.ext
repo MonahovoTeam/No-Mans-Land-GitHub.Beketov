@@ -175,6 +175,172 @@ sound[] = {sound\character\npc\wastelanders\Monakhino\guard_hello\meet_com_hello
 titles[] = {};
 };
 
+class meet_sec_2_hello_1
+{
+name = "meet_sec_2_hello_1"; // Name for mission editor
+sound[] = {sound\character\npc\wastelanders\Monakhino\guard_hello\meet_sec_2_hello_1.ogg, db+5, 1.0};
+titles[] = {};
+};
+
+class meet_sec_2_hello_2
+{
+name = "meet_sec_2_hello_2"; // Name for mission editor
+sound[] = {sound\character\npc\wastelanders\Monakhino\guard_hello\meet_sec_2_hello_2.ogg, db+5, 1.0};
+titles[] = {};
+};
+
+class meet_sec_2_hello_3
+{
+name = "meet_sec_2_hello_3"; // Name for mission editor
+sound[] = {sound\character\npc\wastelanders\Monakhino\guard_hello\meet_sec_2_hello_3.ogg, db+5, 1.0};
+titles[] = {};
+};
+
+class meet_civ_2_no_1
+{
+name = "meet_civ_2_no_1"; // Name for mission editor
+sound[] = {sound\character\npc\wastelanders\Monakhino\guard_hello\meet_civ_2_no_1.ogg, db+5, 1.0};
+titles[] = {};
+};
+
+class meet_civ_2_no_2
+{
+name = "meet_civ_2_no_2"; // Name for mission editor
+sound[] = {sound\character\npc\wastelanders\Monakhino\guard_hello\meet_civ_2_no_2.ogg, db+5, 1.0};
+titles[] = {};
+};
+
+class meet_monk_idap_hello_1
+{
+name = "meet_monk_idap_hello_1"; // Name for mission editor
+sound[] = {sound\character\npc\wastelanders\Monakhino\guard_hello\meet_monk_idap_hello_1.ogg, db+5, 1.0};
+titles[] = {};
+};
+
+class meet_monk_idap_hello_2
+{
+name = "meet_monk_idap_hello_2"; // Name for mission editor
+sound[] = {sound\character\npc\wastelanders\Monakhino\guard_hello\meet_monk_idap_hello_2.ogg, db+5, 1.0};
+titles[] = {};
+};
+
+class meet_monk_idap_hello_3
+{
+name = "meet_monk_idap_hello_3"; // Name for mission editor
+sound[] = {sound\character\npc\wastelanders\Monakhino\guard_hello\meet_monk_idap_hello_3.ogg, db+5, 1.0};
+titles[] = {};
+};
+
+
+class meet_sec_5_hello_1
+{
+name = "meet_sec_5_hello_1"; // Name for mission editor
+sound[] = {sound\character\npc\wastelanders\Monakhino\guard_hello\meet_sec_5_hello_1.ogg, db+5, 1.0};
+titles[] = {};
+};
+
+
+class meet_sec_5_hello_2
+{
+name = "meet_sec_5_hello_2"; // Name for mission editor
+sound[] = {sound\character\npc\wastelanders\Monakhino\guard_hello\meet_sec_5_hello_2.ogg, db+5, 1.0};
+titles[] = {};
+};
+
+class meet_sec_5_hello_3
+{
+name = "meet_sec_5_hello_3"; // Name for mission editor
+sound[] = {sound\character\npc\wastelanders\Monakhino\guard_hello\meet_sec_5_hello_3.ogg, db+5, 1.0};
+titles[] = {};
+};
+
+// Ambient MONK
+
+class idle_1
+{
+name = "idle_1"; // Name for mission editor
+sound[] = {sound\character\npc\wastelanders\Monakhino\ambient-talking\idle_1.ogg, db+5, 1.0};
+titles[] = {};
+};
+
+class idle_2
+{
+name = "idle_2"; // Name for mission editor
+sound[] = {sound\character\npc\wastelanders\Monakhino\ambient-talking\idle_2.ogg, db+5, 1.0};
+titles[] = {};
+};
+
+class idle_3
+{
+name = "idle_3"; // Name for mission editor
+sound[] = {sound\character\npc\wastelanders\Monakhino\ambient-talking\idle_3.ogg, db+5, 1.0};
+titles[] = {};
+};
+
+class idle_4
+{
+name = "idle_4"; // Name for mission editor
+sound[] = {sound\character\npc\wastelanders\Monakhino\ambient-talking\idle_4.ogg, db+5, 1.0};
+titles[] = {};
+};
+
+class idle_5
+{
+name = "idle_5"; // Name for mission editor
+sound[] = {sound\character\npc\wastelanders\Monakhino\ambient-talking\idle_5.ogg, db+5, 1.0};
+titles[] = {};
+};
+
+class idle_6
+{
+name = "idle_6"; // Name for mission editor
+sound[] = {sound\character\npc\wastelanders\Monakhino\ambient-talking\idle_6.ogg, db+5, 1.0};
+titles[] = {};
+};
+
+class idle_7
+{
+name = "idle_7"; // Name for mission editor
+sound[] = {sound\character\npc\wastelanders\Monakhino\ambient-talking\idle_7.ogg, db+5, 1.0};
+titles[] = {};
+};
+
+class idle_8
+{
+name = "idle_8"; // Name for mission editor
+sound[] = {sound\character\npc\wastelanders\Monakhino\ambient-talking\idle_8.ogg, db+5, 1.0};
+titles[] = {};
+};
+
+class idle_9
+{
+name = "idle_9"; // Name for mission editor
+sound[] = {sound\character\npc\wastelanders\Monakhino\ambient-talking\idle_9.ogg, db+5, 1.0};
+titles[] = {};
+};
+
+class idle_10
+{
+name = "idle_10"; // Name for mission editor
+sound[] = {sound\character\npc\wastelanders\Monakhino\ambient-talking\idle_10.ogg, db+5, 1.0};
+titles[] = {};
+};
+
+class idle_11
+{
+name = "idle_11"; // Name for mission editor
+sound[] = {sound\character\npc\wastelanders\Monakhino\ambient-talking\idle_11.ogg, db+5, 1.0};
+titles[] = {};
+};
+
+class idle_12
+{
+name = "idle_12"; // Name for mission editor
+sound[] = {sound\character\npc\wastelanders\Monakhino\ambient-talking\idle_12.ogg, db+5, 1.0};
+titles[] = {};
+};
+
+
 /* ```````````````````````````````
 
 BACKGROUND LOCATION SOUNDS

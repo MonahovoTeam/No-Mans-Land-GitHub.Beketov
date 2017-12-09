@@ -8,7 +8,7 @@ class EditorData
 	toggles=9;
 	class ItemIDProvider
 	{
-		nextID=1327;
+		nextID=1350;
 	};
 	class MarkerIDProvider
 	{
@@ -20,10 +20,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={622.47394,14.559085,4729.0972};
-		dir[]={-0.30231866,-0.68500292,0.66304427};
-		up[]={-0.28420994,0.72843301,0.6233294};
-		aside[]={0.90993154,-2.5126501e-006,0.41489425};
+		pos[]={574.31512,44.321121,4706.3164};
+		dir[]={0.53044045,-0.56215292,0.63471782};
+		up[]={0.36056203,0.82690078,0.43144196};
+		aside[]={0.76735777,-7.8052108e-007,-0.64128608};
 	};
 };
 binarizationWanted=0;
@@ -1105,7 +1105,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=680;
+		items=691;
 		class Item0
 		{
 			dataType="Object";
@@ -1170,10 +1170,33 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				disableSimulation=1;
+				dynamicSimulation=1;
 			};
 			id=6;
 			type="Land_Wreck_Truck_dropside_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="allowDamage";
+					expression="_this allowdamage _value;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
 		};
 		class Item4
 		{
@@ -1187,10 +1210,33 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				disableSimulation=1;
+				dynamicSimulation=1;
 			};
 			id=7;
 			type="Land_Wreck_Offroad_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="allowDamage";
+					expression="_this allowdamage _value;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
 		};
 		class Item5
 		{
@@ -7816,7 +7862,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={692.88104,10.639175,4600.6211};
+				position[]={693.48242,10.628789,4601.0938};
 				angles[]={0.0030099689,3.6433017,6.2682829};
 			};
 			side="Empty";
@@ -7827,6 +7873,7 @@ class Mission
 			};
 			id=363;
 			type="Land_Wreck_Offroad2_F";
+			atlOffset=9.5367432e-007;
 		};
 		class Item78
 		{
@@ -10120,20 +10167,21 @@ class Mission
 		class Item91
 		{
 			dataType="Trigger";
-			position[]={620.05792,8.5925617,4723.4805};
-			angle=2.856957;
+			position[]={617.67456,8.7230873,4725.1782};
+			angle=2.8569636;
 			class Attributes
 			{
 				condition="call{player in thislist}";
 				onActivation="call{execVM ""character-states\npc\monk_post_hello.sqf"";}";
 				sizeA=8;
-				sizeB=10;
+				sizeB=4;
 				repeatable=1;
 				activationBy="ANYPLAYER";
 				isRectangle=1;
 			};
 			id=387;
 			type="EmptyDetectorAreaR50";
+			atlOffset=2.6702881e-005;
 		};
 		class Item92
 		{
@@ -22677,7 +22725,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={608.36902,9.6168785,4739.7827};
-						angles[]={0,1.4370008,0};
+						angles[]={0,1.4369993,0};
 					};
 					side="Independent";
 					flags=5;
@@ -24223,8 +24271,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={631.21722,19.385597,4881.0112};
-						angles[]={0,4.1530275,0};
+						position[]={631.21698,19.386003,4881.0107};
+						angles[]={0,4.1530285,0};
 					};
 					side="Independent";
 					flags=5;
@@ -24232,7 +24280,7 @@ class Mission
 					{
 						skill=0.44999999;
 						rank="CORPORAL";
-						name="monk_sec_5";
+						name="monk_sec_5_kont";
 						ignoreByDynSimulGrid=1;
 						stance="Up";
 						class Inventory
@@ -24292,7 +24340,7 @@ class Mission
 					};
 					id=852;
 					type="LOP_UKR_Infantry_AR";
-					atlOffset=0.073562622;
+					atlOffset=0.073999405;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -44391,7 +44439,7 @@ class Mission
 		{
 			dataType="Trigger";
 			position[]={620.64203,9.112051,4732.896};
-			angle=3.387614;
+			angle=3.3876123;
 			class Attributes
 			{
 				condition="call{player in thislist}";
@@ -44403,6 +44451,294 @@ class Mission
 				isRectangle=1;
 			};
 			id=1326;
+			type="EmptyDetectorAreaR50";
+		};
+		class Item680
+		{
+			dataType="Trigger";
+			position[]={609.42896,9.4778767,4739.9155};
+			angle=1.4567384;
+			class Attributes
+			{
+				condition="call{player in thislist}";
+				onActivation="call{execVM ""character-states\npc\monk-talking\monk_post\monk_sec2_hello.sqf"";}";
+				sizeA=1.2;
+				sizeB=2;
+				repeatable=1;
+				activationBy="ANYPLAYER";
+				isRectangle=1;
+			};
+			id=1329;
+			type="EmptyDetectorAreaR50";
+			atlOffset=-1.1444092e-005;
+		};
+		class Item681
+		{
+			dataType="Trigger";
+			position[]={609.11298,14.875297,4810.2109};
+			angle=3.1953135;
+			class Attributes
+			{
+				condition="call{player in thislist}";
+				onActivation="call{monk_amb_talking = 1;" \n "execVM ""character-states\npc\monk-talking\monk_amb-talking.sqf"";}";
+				onDeactivation="call{monk_amb_talking = 0;" \n "execVM ""character-states\npc\monk-talking\monk_amb-talking.sqf"";}";
+				sizeA=120;
+				sizeB=120;
+				repeatable=1;
+				activationBy="ANYPLAYER";
+			};
+			id=1330;
+			type="EmptyDetectorAreaR50";
+			atlOffset=0.020000458;
+		};
+		class Item682
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={608.36938,9.9048853,4678.9111};
+				angles[]={6.1505203,5.1429324,6.1005988};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				dynamicSimulation=1;
+			};
+			id=1331;
+			type="Land_Wreck_BRDM2_F";
+			atlOffset=-1.4305115e-005;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="allowDamage";
+					expression="_this allowdamage _value;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item683
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={622.75275,15.477485,4813.4512};
+				angles[]={6.2057271,1.8310804,6.2474723};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=1335;
+			type="Land_Wreck_CarDismantled_F";
+			atlOffset=-3.4332275e-005;
+		};
+		class Item684
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={553.14703,11.702819,4709.8374};
+				angles[]={6.2705798,0,6.2740312};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				dynamicSimulation=1;
+			};
+			id=1336;
+			type="Land_Wreck_Van_F";
+			atlOffset=0.00012683868;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="allowDamage";
+					expression="_this allowdamage _value;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item685
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={653.2132,12.145137,4625.8042};
+				angles[]={0.043598793,3.6435504,6.2774186};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=1341;
+			type="Land_Wreck_Slammer_F";
+			atlOffset=-1.7166138e-005;
+		};
+		class Item686
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={692.37598,10.60142,4594.9092};
+				angles[]={0.0071383966,2.911052,6.2690825};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				dynamicSimulation=1;
+			};
+			id=1344;
+			type="hiluxWreck";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="Enh_featureType";
+					expression="_this setFeatureType (parseNumber _value)";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="0";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="allowDamage";
+					expression="_this allowdamage _value;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=2;
+			};
+		};
+		class Item687
+		{
+			dataType="Trigger";
+			position[]={597.23901,10.940083,4743.0698};
+			angle=0.13967867;
+			class Attributes
+			{
+				condition="call{player in thislist}";
+				onActivation="call{execVM ""character-states\npc\monk-talking\monk_post\monk_civ2_no.sqf"";}";
+				sizeA=3;
+				sizeB=3;
+				repeatable=1;
+				activationBy="ANYPLAYER";
+				isRectangle=1;
+			};
+			id=1346;
+			type="EmptyDetectorAreaR50";
+			atlOffset=9.5367432e-007;
+		};
+		class Item688
+		{
+			dataType="Trigger";
+			position[]={616.29712,10.994963,4754.8984};
+			angle=1.4567384;
+			class Attributes
+			{
+				condition="call{player in thislist}";
+				onActivation="call{execVM ""character-states\npc\monk-talking\monk_post\monk_idap_hello_1.sqf"";}";
+				sizeA=1.2;
+				sizeB=1.6;
+				repeatable=1;
+				activationBy="ANYPLAYER";
+				isRectangle=1;
+			};
+			id=1347;
+			type="EmptyDetectorAreaR50";
+			atlOffset=-2.8610229e-006;
+		};
+		class Item689
+		{
+			dataType="Trigger";
+			position[]={645.78503,18.375689,4868.6938};
+			angle=1.4567384;
+			class Attributes
+			{
+				condition="call{player in thislist}";
+				onActivation="call{execVM ""character-states\npc\monk-talking\monk_post\monk_sec2_hello.sqf"";}";
+				sizeA=1.2;
+				sizeB=2;
+				repeatable=1;
+				activationBy="ANYPLAYER";
+				isRectangle=1;
+			};
+			id=1348;
+			type="EmptyDetectorAreaR50";
+			atlOffset=0.031229019;
+		};
+		class Item690
+		{
+			dataType="Trigger";
+			position[]={630.27899,19.282913,4880.229};
+			angle=4.1223106;
+			class Attributes
+			{
+				condition="call{player in thislist}";
+				onActivation="call{execVM ""character-states\npc\monk-talking\monk_post\monk_sec5_hello.sqf"";}";
+				sizeA=1.6;
+				sizeB=1.6;
+				repeatable=1;
+				activationBy="ANYPLAYER";
+				isRectangle=1;
+			};
+			id=1349;
 			type="EmptyDetectorAreaR50";
 		};
 	};

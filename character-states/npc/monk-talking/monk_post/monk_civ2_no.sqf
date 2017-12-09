@@ -1,11 +1,11 @@
-_monk_post_guard_hello = ["meet_hello_1","meet_hello_2","meet_hello_3"];
-_monk_post_guard_hello_sleep = [1,0.8,0.3];
+_monk_post_guard_hello = ["meet_civ_2_no_1","meet_civ_2_no_2"];
+_monk_post_guard_hello_sleep = [2,2.9];
 _rndphrase = _monk_post_guard_hello call BIS_fnc_selectRandom;
 _getsleepInd = _monk_post_guard_hello find _rndphrase;
 _getsleep = _monk_post_guard_hello_sleep select _getsleepInd;
-	monk_post_guard_1 setRandomLip true;
-	monk_post_guard_1 say3D _rndphrase; 
+	civ_2 setRandomLip true;
+	civ_2 say3D _rndphrase; 
 	sleep _getsleep;
-	monk_post_guard_1 setRandomLip false;
+	civ_2 setRandomLip false;
 	// [monk_post_guard_1, (_monk_post_guard_hello select floor random count _monk_post_guard_hello)] call CBA_fnc_globalSay3d;
 	sleep 10;
