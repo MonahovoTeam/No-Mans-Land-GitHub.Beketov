@@ -4,11 +4,14 @@
 	Website - http://www.sunrise-production.com
 */
 
-class NML_H
+class NMLHealth
 {
 	class NML_HealthDamage
 	{
 		file = "character-states\NML-Inventory\player-health\Functions\NML_HealthDamage";
+		class giveBrainDamage {};
+		class giveGastroDamage {};
 		class giveLungDamage {};
+		class giveNevroDamage {};
 	};
 };

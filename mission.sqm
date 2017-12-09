@@ -5,7 +5,7 @@ class EditorData
 	angleGridStep=0.2617994;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=9;
+	toggles=1033;
 	class ItemIDProvider
 	{
 		nextID=1353;
@@ -20,10 +20,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={688.94287,17.216829,4612.4102};
-		dir[]={-0.21375108,-0.6311686,0.74578071};
-		up[]={-0.17392637,0.77550149,0.60683149};
-		aside[]={0.96133083,-5.9593003e-007,0.27553582};
+		pos[]={677.53821,24.8016,4633.0327};
+		dir[]={0.36394501,-0.69200361,-0.62356347};
+		up[]={0.34884334,0.72184807,-0.59769011};
+		aside[]={-0.86372972,4.6764035e-007,-0.50411338};
 	};
 };
 binarizationWanted=0;
@@ -10166,28 +10166,28 @@ class Mission
 		class Item91
 		{
 			dataType="Trigger";
-			position[]={617.67456,8.7230873,4725.1782};
+			position[]={618.2851,8.4247284,4723.2236};
 			angle=2.8569636;
 			class Attributes
 			{
 				condition="call{player in thislist}";
 				onActivation="call{execVM ""character-states\npc\monk_post_hello.sqf"";}";
-				sizeA=8;
-				sizeB=4;
+				sizeA=6.1521959;
+				sizeB=5.9050279;
 				repeatable=1;
 				activationBy="ANYPLAYER";
 				isRectangle=1;
 			};
 			id=387;
 			type="EmptyDetectorAreaR50";
-			atlOffset=2.6702881e-005;
+			atlOffset=-0.14699173;
 		};
 		class Item92
 		{
 			dataType="Marker";
 			position[]={687.85602,9.7980003,4603.6968};
 			name="marker_6";
-			text="Северный блокпост Троицы (Химическое заражение)";
+			text="Северный блокпост Троицы (химическое заражение)";
 			type="hd_dot";
 			colorName="ColorRed";
 			id=388;
@@ -44756,7 +44756,7 @@ class Mission
 			dataType="Marker";
 			position[]={646.54401,13.772,4348.2959};
 			name="marker_60";
-			text="Троицкиая Ратуша (химическое заражение)";
+			text="Троицкий Дом (химическое заражение)";
 			type="hd_dot";
 			colorName="ColorRed";
 			id=1352;
