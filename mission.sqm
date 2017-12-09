@@ -20,10 +20,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={677.53821,24.8016,4633.0327};
-		dir[]={0.36394501,-0.69200361,-0.62356347};
-		up[]={0.34884334,0.72184807,-0.59769011};
-		aside[]={-0.86372972,4.6764035e-007,-0.50411338};
+		pos[]={694.90497,14.119892,4620.8013};
+		dir[]={-0.84546065,-0.52557129,0.096067354};
+		up[]={-0.52232593,0.85064572,0.059347861};
+		aside[]={0.11289398,-1.1574502e-006,0.99370265};
 	};
 };
 binarizationWanted=0;
@@ -1000,7 +1000,7 @@ class Mission
 	assetType="Free";
 	class Intel
 	{
-		briefingName="Ничейная земля v0.0.3";
+		briefingName="Ничейная земля v0.0.3a";
 		overviewText="В войне не бывает второго приза для проигравших.  (c) Омар Брэдли";
 		timeOfChanges=1800.0002;
 		startWeather=0.5042358;
@@ -41713,7 +41713,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="[[[[],[]],[[],[]],[[""kss_bread"",""kss_corn"",""kss_cucumbers"",""kss_beer_dark"",""kss_irp"",""kss_beer_light"",""kss_mre"",""kss_mushrooms"",""kss_red_beans"",""kss_soup_chicken"",""kss_soup_vegetable"",""kss_vodka"",""kss_bottle_small""],[20,10,2,5,2,1,1,5,4,2,1,5,30]],[[],[]]],false]";
+							value="[[[[],[]],[[],[]],[[""kss_bread"",""kss_corn"",""kss_cucumbers"",""kss_irp"",""kss_beer_light"",""kss_mushrooms"",""kss_red_beans"",""kss_soup_vegetable"",""kss_bottle_small""],[4,1,1,1,1,5,2,1,5]],[[],[]]],false]";
 						};
 					};
 				};
