@@ -8,11 +8,11 @@ class EditorData
 	toggles=9;
 	class ItemIDProvider
 	{
-		nextID=1350;
+		nextID=1353;
 	};
 	class MarkerIDProvider
 	{
-		nextID=58;
+		nextID=61;
 	};
 	class LayerIndexProvider
 	{
@@ -20,10 +20,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={574.31512,44.321121,4706.3164};
-		dir[]={0.53044045,-0.56215292,0.63471782};
-		up[]={0.36056203,0.82690078,0.43144196};
-		aside[]={0.76735777,-7.8052108e-007,-0.64128608};
+		pos[]={688.94287,17.216829,4612.4102};
+		dir[]={-0.21375108,-0.6311686,0.74578071};
+		up[]={-0.17392637,0.77550149,0.60683149};
+		aside[]={0.96133083,-5.9593003e-007,0.27553582};
 	};
 };
 binarizationWanted=0;
@@ -1105,7 +1105,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=691;
+		items=693;
 		class Item0
 		{
 			dataType="Object";
@@ -3998,7 +3998,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={688.13745,9.1856165,4617.9155};
+						position[]={688.13702,9.185545,4617.916};
 						angles[]={0,5.8310404,0};
 					};
 					side="Independent";
@@ -4006,6 +4006,7 @@ class Mission
 					class Attributes
 					{
 						rank="CORPORAL";
+						init="call{player addAction [""Check NML_HEalth"", {hint format [""BrainDamage: %1; LungDamage: %2; GastroDamage: %3; NevroDamage: %4;"", NML_BrainDamage, NML_LungDamage, NML_GastroDamage, NML_NevroDamage]}];}";
 						name="ply1";
 						description="Тёма Гроза";
 						isPlayer=1;
@@ -4151,7 +4152,6 @@ class Mission
 					};
 					id=57;
 					type="LOP_UKR_Infantry_medic";
-					atlOffset=5.2452087e-005;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -5682,7 +5682,6 @@ class Mission
 				formation="COLUMN";
 			};
 			id=56;
-			atlOffset=5.2452087e-005;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -10188,9 +10187,9 @@ class Mission
 			dataType="Marker";
 			position[]={687.85602,9.7980003,4603.6968};
 			name="marker_6";
-			text="Северный блокпост Троицы";
+			text="Северный блокпост Троицы (Химическое заражение)";
 			type="hd_dot";
-			colorName="ColorGreen";
+			colorName="ColorRed";
 			id=388;
 			atlOffset=0.00034141541;
 		};
@@ -41715,7 +41714,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="[[[[],[]],[[],[]],[[""kss_bread"",""kss_corn"",""kss_cucumbers"",""kss_beer_dark"",""kss_irp"",""kss_beer_light"",""kss_mre"",""kss_mushrooms"",""kss_red_beans"",""kss_soup_chicken"",""kss_soup_vegetable"",""kss_vodka""],[20,10,2,5,2,1,1,5,4,2,1,5]],[[],[]]],false]";
+							value="[[[[],[]],[[],[]],[[""kss_bread"",""kss_corn"",""kss_cucumbers"",""kss_beer_dark"",""kss_irp"",""kss_beer_light"",""kss_mre"",""kss_mushrooms"",""kss_red_beans"",""kss_soup_chicken"",""kss_soup_vegetable"",""kss_vodka"",""kss_bottle_small""],[20,10,2,5,2,1,1,5,4,2,1,5,30]],[[],[]]],false]";
 						};
 					};
 				};
@@ -44740,6 +44739,28 @@ class Mission
 			};
 			id=1349;
 			type="EmptyDetectorAreaR50";
+		};
+		class Item691
+		{
+			dataType="Marker";
+			position[]={694.12,9.2349997,4616.1182};
+			name="marker_59";
+			text="Наш лагерь";
+			type="hd_dot";
+			colorName="ColorGreen";
+			id=1351;
+			atlOffset=-0.00015354156;
+		};
+		class Item692
+		{
+			dataType="Marker";
+			position[]={646.54401,13.772,4348.2959};
+			name="marker_60";
+			text="Троицкиая Ратуша (химическое заражение)";
+			type="hd_dot";
+			colorName="ColorRed";
+			id=1352;
+			atlOffset=-6.7710876e-005;
 		};
 	};
 };

@@ -21,6 +21,7 @@ class CfgClient
 class CfgFunctions 
 {
     #include "HG\Functions\HG_Functions.h"
+    #include "character-states\NML-Inventory\player-health\NML_Health_Functions.h"
 };
 
 
