@@ -4006,7 +4006,6 @@ class Mission
 					class Attributes
 					{
 						rank="CORPORAL";
-						init="call{player addAction [""Check NML_HEalth"", {hint format [""BrainDamage: %1; LungDamage: %2; GastroDamage: %3; NevroDamage: %4;"", NML_BrainDamage, NML_LungDamage, NML_GastroDamage, NML_NevroDamage]}];}";
 						name="ply1";
 						description="Тёма Гроза";
 						isPlayer=1;
