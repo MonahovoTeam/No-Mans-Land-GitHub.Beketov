@@ -160,6 +160,21 @@ sound[] = {sound\character\npc\wastelanders\Monakhino\guard_hello\meet_hello_3.o
 titles[] = {};
 };
 
+
+class meet_com_hello_1
+{
+name = "meet_com_hello_1"; // Name for mission editor
+sound[] = {sound\character\npc\wastelanders\Monakhino\guard_hello\meet_com_hello_1.ogg, db+5, 1.0};
+titles[] = {};
+};
+
+class meet_com_hello_2
+{
+name = "meet_com_hello_2"; // Name for mission editor
+sound[] = {sound\character\npc\wastelanders\Monakhino\guard_hello\meet_com_hello_2.ogg, db+5, 1.0};
+titles[] = {};
+};
+
 /* ```````````````````````````````
 
 BACKGROUND LOCATION SOUNDS
