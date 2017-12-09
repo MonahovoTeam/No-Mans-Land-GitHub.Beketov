@@ -6,9 +6,9 @@
 
 class NML_H
 {
-	class NML_LungDamageFNC
+	class NML_HealthDamage
 	{
-		file = "character-states\NML-Inventory\player-health\Functions\NML_LungDamageFNC";
+		file = "character-states\NML-Inventory\player-health\Functions\NML_HealthDamage";
 		class giveLungDamage {};
 	};
 };
