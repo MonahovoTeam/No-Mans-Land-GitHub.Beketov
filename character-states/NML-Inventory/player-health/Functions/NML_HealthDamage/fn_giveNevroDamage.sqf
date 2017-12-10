@@ -1,13 +1,13 @@
 /*
-    File: fn_giveLungDamage
+    File: fn_giveNevroDamage
     Author: Grozovsky
     Arguments :
         0 - (SCALAR) damage
 */
 
-NML_NevroDamage = NML_NevroDamage + (_this select 0);
-NML_NevroDamage = NML_NevroDamage min 100;
+NMLNeDmg = NMLNeDmg + (_this select 0);
+NMLNeDmg = NMLNeDmg min 100;
 
-if (NML_NevroDamage < 0) then {
-	NML_NevroDamage = 0;
+if (NMLNeDmg < 0) then {
+	NMLNeDmg = 0;
 };

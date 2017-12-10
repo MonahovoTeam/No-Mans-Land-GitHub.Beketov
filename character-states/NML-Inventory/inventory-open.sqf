@@ -18,7 +18,7 @@
 									if (KSS_hunger >= 10 && KSS_hunger < 40) then {
 										"<t  size='1.2' color='#FFA500'>Вы сильно голодны.</t>" 
 									} else {	
-											"<t  size='1.3' color='#ef0404'>Вы умираете от голода!</t>"
+											"<t  size='1.3' color='#ef0404'>Вам очень плохо из-за голода!</t>"
 											}
 										} 
 								}
@@ -33,7 +33,7 @@
 					"<t  size='1.2' color='#ffff00'>Вы чувствуете жажду.</t>"
 				} else { if (KSS_thirst >= 10 && KSS_thirst < 40) then {
 					"<t  size='1.2' color='#FFA500'>Вы чувствуете сильную жажду.</t>" 
-				} else {"<t  size='1.3' color='#ef0404'>Вы умираете от обезвоживания!</t>"}
+				} else {"<t  size='1.3' color='#ef0404'>У вас обезвоживание!</t>"}
 				
 				} } };
 		

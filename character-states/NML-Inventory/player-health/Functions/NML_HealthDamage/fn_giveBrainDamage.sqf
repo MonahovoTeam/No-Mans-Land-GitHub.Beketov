@@ -1,13 +1,13 @@
 /*
-    File: fn_giveLungDamage
+    File: fn_giveBrainDamage
     Author: Grozovsky
     Arguments :
         0 - (SCALAR) damage
 */
 
-NML_BrainDamage = NML_BrainDamage + (_this select 0);
-NML_BrainDamage = NML_BrainDamage min 100;
+NMLBrDmg = NMLBrDmg + (_this select 0);
+NMLBrDmg = NMLBrDmg min 100;
 
-if (NML_BrainDamage < 0) then {
-	NML_BrainDamage = 0;
+if (NMLBrDmg < 0) then {
+	NMLBrDmg = 0;
 };
