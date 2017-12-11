@@ -36,14 +36,12 @@
 				} else {"<t  size='1.3' color='#ef0404'>У вас обезвоживание!</t>"}
 				
 				} } };
-		
-		// Name Hook
-		_plypersname = roleDescription player;
+
 		
 
 		while {inventoryOpen == 1} do {
 		
-			hintSilent parseText format["<img image='img\player-icons\wallet.paa' img size='4' /><br /><t  color='#768858' size='1.5'>В вашем кошельке:</t><br /> <t>%1 руб.</t><br /><br /><t  color='#768858' size='1.5'>Ваш персонаж:</t><br/><t size='1.3'>%4</t><br/><br/><t  color='#768858' size='1.5'>Ваш статус:</t><br/><t align='center'>%2</t><br/><t align='center'>%3</t>", ([(player getVariable "HG_Cash")] call BIS_fnc_numberText),_hungertext,_thirsttext,_plypersname];
+			hintSilent parseText format["<img image='img\player-icons\wallet.paa' img size='4' /><br /><t  color='#768858' size='1.5'>В вашем кошельке:</t><br /> <t>%1 руб.</t><br /><br /><t  color='#768858' size='1.5'>Ваш персонаж:</t><br/><t size='1.3' align='center'>Имя: </t><t size='1.3' align='center'>%4</t><br/><br/><t  color='#768858' size='1.5'>Статус персонажа:</t><br/><t align='center'>%2</t><br/><t align='center'>%3</t>", ([(player getVariable "HG_Cash")] call BIS_fnc_numberText),_hungertext,_thirsttext, PersonName];
 			sleep 1;
 		}
 };
