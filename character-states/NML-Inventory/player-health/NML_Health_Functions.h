@@ -13,5 +13,6 @@ class NMLHealth
 		class giveGastroDamage {};
 		class giveLungDamage {};
 		class giveNevroDamage {};
+		class giveKidneyDamage {};
 	};
 };
