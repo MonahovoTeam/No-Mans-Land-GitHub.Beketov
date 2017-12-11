@@ -2,6 +2,6 @@
 [] spawn {
 	while {true} do {
 		mil_generator_1 say3D "mil_generator_work_1";
-		sleep 3;
+		sleep 4;
 	};
 }

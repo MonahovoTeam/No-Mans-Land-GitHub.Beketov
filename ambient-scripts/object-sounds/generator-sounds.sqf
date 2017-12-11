@@ -2,6 +2,6 @@
 [] spawn {
 	while {true} do {
 		generator_1 say3D "generator_work_1";
-		sleep 4;
+		sleep 3;
 	};
 }
