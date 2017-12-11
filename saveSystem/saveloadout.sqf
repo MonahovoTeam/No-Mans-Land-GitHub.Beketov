@@ -1,7 +1,7 @@
 saveLoadout ={
 /*
 	Author: BlueCrab
-	Version 1.0
+	Version 0.1a
 
 	Description:
 	Save loadout to profileNamespace.
@@ -12,8 +12,9 @@ saveLoadout ={
 	_dir = direction player;
 	_loadout = getUnitLoadout player;
 
+	// NML_pl_sv - No Man's Land Player Save
 	_savedata = [_pos, _dir, _loadout];
-	profileNamespace setVariable ["NML_save", _savedata];
+	profileNamespace setVariable ["NML_pl_sv", _savedata];
 	saveProfileNamespace;
 
 	hintSilent "Saved!";
@@ -21,7 +22,7 @@ saveLoadout ={
 
 loadLoadout = {
 
-	_savedata = profileNamespace getVariable "NML_save";
+	_savedata = profileNamespace getVariable "NML_pl_sv";
 
 
 	removeAllAssignedItems player;
