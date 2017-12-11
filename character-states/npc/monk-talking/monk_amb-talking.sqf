@@ -5,8 +5,8 @@
 	_monk_post_amb_talking_sleep_v1 = [5,6,9,3,9,7.5,5,3,6,8,1,3];
 	_monk_post_amb_talking_sleep_v2 = [7,5,3,10,1,2,2,1,1.2,0.8,1,0.5];
 	_monk_post_amb_talking_sleep_v3 = [12,11,12,9,10,16,8,10,8,6,7,22];
-	_npc_voice1 = [monk_post_guard_2,monk_sec_6];
-	_npc_voice2 = [monk_sec_3];
+	_npc_voice1 = [monk_post_guard_2,monk_sec_6,monk_np_sec_1];
+	_npc_voice2 = [monk_sec_3,monk_np_sec_1];
 	_npc_voice3 = [monk_sec_4];
 	
 
