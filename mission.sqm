@@ -8,7 +8,7 @@ class EditorData
 	toggles=9;
 	class ItemIDProvider
 	{
-		nextID=1374;
+		nextID=1375;
 	};
 	class MarkerIDProvider
 	{
@@ -20,10 +20,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={625.19995,25.339565,4891.8154};
-		dir[]={-0.31352007,-0.48532361,-0.81632793};
-		up[]={-0.17403321,0.87424904,-0.45312932};
-		aside[]={-0.93362266,-3.533205e-007,0.35858375};
+		pos[]={663.98151,25.579826,4847.7837};
+		dir[]={0.64568746,-0.75889653,-0.086092718};
+		up[]={0.75223869,0.65114903,-0.10030191};
+		aside[]={-0.13219413,4.6748828e-006,-0.99134284};
 	};
 };
 binarizationWanted=0;
@@ -1001,7 +1001,7 @@ class Mission
 	assetType="Free";
 	class Intel
 	{
-		briefingName="Ничейная земля v0.0.3b";
+		briefingName="Ничейная земля v0.0.3с";
 		overviewText="В войне не бывает второго приза для проигравших.  (c) Омар Брэдли";
 		resistanceWest=0;
 		timeOfChanges=1800.0002;
