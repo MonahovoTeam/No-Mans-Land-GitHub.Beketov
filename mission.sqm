@@ -8,7 +8,7 @@ class EditorData
 	toggles=9;
 	class ItemIDProvider
 	{
-		nextID=1365;
+		nextID=1366;
 	};
 	class MarkerIDProvider
 	{
@@ -20,10 +20,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={620.78894,43.569824,4712.9399};
-		dir[]={0.014645095,-0.6007722,0.79944909};
-		up[]={0.010998437,0.79927915,0.60076946};
-		aside[]={0.99989146,-2.1608466e-006,-0.018287167};
+		pos[]={682.8501,29.573832,4671.0732};
+		dir[]={0.61604804,-0.38542849,-0.68712151};
+		up[]={0.25735474,0.92266488,-0.28705058};
+		aside[]={-0.74465603,-2.3853208e-006,-0.66761523};
 	};
 };
 binarizationWanted=0;
@@ -1106,7 +1106,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=241;
+		items=242;
 		class Item0
 		{
 			dataType="Object";
@@ -45098,6 +45098,24 @@ class Mission
 				};
 				nAttributes=2;
 			};
+		};
+		class Item241
+		{
+			dataType="Trigger";
+			position[]={657.677,13.931049,4358.75};
+			angle=1.6231562;
+			class Attributes
+			{
+				condition="call{player in thislist}";
+				onActivation="call{hintC ""Test"";}";
+				sizeA=260;
+				sizeB=260;
+				repeatable=1;
+				activationBy="ANYPLAYER";
+				effectTitle="RscNoise";
+			};
+			id=1365;
+			type="EmptyDetectorAreaR50";
 		};
 	};
 };

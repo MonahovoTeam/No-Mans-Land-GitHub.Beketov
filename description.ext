@@ -130,7 +130,7 @@ titles[] = {};
 class mil_generator_work_1
 {
 name = "mil_generator_work_1"; // Name for mission editor
-sound[] = {sound\ambient\object\mil_generator_work_1.ogg, db-6, 1.0};
+sound[] = {sound\ambient\object\mil_generator_work_1.ogg, db-10 , 1.0};
 titles[] = {};
 };
 
