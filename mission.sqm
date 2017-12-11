@@ -8,7 +8,7 @@ class EditorData
 	toggles=1033;
 	class ItemIDProvider
 	{
-		nextID=1360;
+		nextID=1361;
 	};
 	class MarkerIDProvider
 	{
@@ -20,10 +20,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={601.96277,40.082355,4837.0107};
-		dir[]={0.64452243,-0.74857563,0.15644553};
-		up[]={0.72749978,0.66295016,0.17658848};
-		aside[]={0.23590948,-2.6578491e-006,-0.97185522};
+		pos[]={691.88269,21.669634,4607.499};
+		dir[]={-0.21070969,-0.57674551,0.78944355};
+		up[]={-0.14876463,0.81680036,0.55734539};
+		aside[]={0.96624166,-1.1706725e-006,0.25791436};
 	};
 };
 binarizationWanted=0;
@@ -1854,8 +1854,8 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={716.78906,9.8881989,4634.9927};
-				angles[]={6.2498698,0,0.10942086};
+				position[]={716.789,9.8882103,4634.9932};
+				angles[]={6.249867,0,0.10941469};
 			};
 			id=16;
 			type="ACE_ModuleExplosive";
@@ -1914,7 +1914,7 @@ class Mission
 									"BOOL"
 								};
 							};
-							value=0;
+							value=1;
 						};
 					};
 				};
@@ -1926,10 +1926,12 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={719.23401,10.218502,4636.8442};
+				position[]={719.12982,10.203447,4636.7358};
+				angles[]={6.2498698,0,0.10942086};
 			};
 			id=18;
 			type="ACE_ModuleMap";
+			atlOffset=-2.8610229e-006;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -3002,7 +3004,7 @@ class Mission
 									"BOOL"
 								};
 							};
-							value=0;
+							value=1;
 						};
 					};
 				};
@@ -3383,7 +3385,7 @@ class Mission
 									"SCALAR"
 								};
 							};
-							value=2;
+							value=3;
 						};
 					};
 				};
@@ -16084,7 +16086,6 @@ class Mission
 			};
 			id=1308;
 			type="ACE_moduleAdvancedMedicalSettings";
-			atlOffset=-9.5367432e-007;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -30082,8 +30083,8 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={621.80072,16.328213,4834.4238};
-								angles[]={0,3.807394,0};
+								position[]={621.80103,16.328226,4834.4238};
+								angles[]={0,3.8074007,0};
 							};
 							side="Independent";
 							flags=5;
@@ -30151,7 +30152,6 @@ class Mission
 							};
 							id=850;
 							type="LOP_UKR_Infantry_AR";
-							atlOffset=-2.2888184e-005;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -30390,7 +30390,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="Андрей Краз";
+											value="Андрей Умник";
 										};
 									};
 								};
@@ -38818,7 +38818,7 @@ class Mission
 				{
 					dataType="Trigger";
 					position[]={616.37659,10.988111,4754.7837};
-					angle=1.3632808;
+					angle=1.3632807;
 					class Attributes
 					{
 						condition="call{player in thislist}";
