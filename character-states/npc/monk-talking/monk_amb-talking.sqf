@@ -10,7 +10,7 @@
 		_getsleep = _monk_post_amb_talking_sleep select _getsleepInd;
 		_npc_talking = _npc_list call BIS_fnc_selectRandom;
 		_npc_talking setRandomLip true;
-		_npc_talking say3D _rndphrase;
+		[_npc_talking, _rndphrase] call CBA_fnc_globalSay3d;
 		sleep _getsleep;
 		_npc_talking setRandomLip false;
 		sleep 5;

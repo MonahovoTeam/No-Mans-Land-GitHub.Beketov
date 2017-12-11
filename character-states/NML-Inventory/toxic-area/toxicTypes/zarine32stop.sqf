@@ -10,7 +10,7 @@
 	
 	
 	call {
-		if (toxicarea == 0) then {
+		if (zarine32 == 0) then {
 			_handle ppEffectEnable true;
 			_handle ppEffectAdjust _effect2;
 			_handle ppEffectCommit 5;
@@ -30,7 +30,7 @@
 	
 	
 	call {
-		if (toxicarea == 0) then {
+		if (zarine32 == 0) then {
 			_handle ppEffectEnable true;
 			_handle ppEffectAdjust _effect2;
 			_handle ppEffectCommit 5;
