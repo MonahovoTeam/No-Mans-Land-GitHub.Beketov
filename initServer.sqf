@@ -5,4 +5,4 @@
     Server initialization
 */
 [] execVM "HG\Setup\fn_serverInitialization.sqf";
-[] execVM "ambient-scripts\object-sounds\music.sqf";
+// [] execVM "ambient-scripts\object-sounds\music.sqf";
