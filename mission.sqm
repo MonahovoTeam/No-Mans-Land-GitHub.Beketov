@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=3;
+		nextID=5;
 	};
 	class Camera
 	{
-		pos[]={706.13318,26.457405,4608.0898};
-		dir[]={-0.27548453,-0.69420755,0.66516328};
-		up[]={-0.26566267,0.7196539,0.6414364};
-		aside[]={0.92395216,-3.6665006e-006,0.38268283};
+		pos[]={720.60645,28.904181,4625.1499};
+		dir[]={-0.79166186,-0.60401779,0.093216956};
+		up[]={-0.59997547,0.79684341,0.070641294};
+		aside[]={0.11693233,-1.05039e-006,0.99320418};
 	};
 };
 binarizationWanted=0;
@@ -2166,12 +2166,12 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={710.79279,9.2932024,4627.4707};
+				position[]={710.95667,9.2974253,4627.4419};
 				angles[]={0.038820028,0,0.018942827};
 			};
 			id=20;
 			type="ace_map_gestures_moduleGroupSettings";
-			atlOffset=1.0490417e-005;
+			atlOffset=1.5258789e-005;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -4316,7 +4316,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={686.21716,8.3493214,4627.0962};
+						position[]={686.4231,8.3364649,4627.2495};
 						angles[]={0,5.7295346,0};
 					};
 					side="Independent";
@@ -4452,7 +4452,7 @@ class Mission
 					};
 					id=58;
 					type="LOP_UKR_Infantry_engineer";
-					atlOffset=-1.8119812e-005;
+					atlOffset=-9.5367432e-007;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -4627,7 +4627,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={683.29034,8.5160227,4625.3296};
+						position[]={683.11584,8.4594164,4625.8789};
 						angles[]={0,5.7592263,0};
 					};
 					side="Independent";
@@ -4770,7 +4770,7 @@ class Mission
 					};
 					id=73;
 					type="LOP_UKR_Infantry_Rifleman";
-					atlOffset=1.1444092e-005;
+					atlOffset=2.3841858e-005;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -16086,6 +16086,7 @@ class Mission
 			};
 			id=1308;
 			type="ACE_moduleAdvancedMedicalSettings";
+			atlOffset=-9.5367432e-007;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -38831,7 +38832,7 @@ class Mission
 					};
 					id=1347;
 					type="EmptyDetectorAreaR50";
-					atlOffset=-2.8610229e-006;
+					atlOffset=-3.8146973e-006;
 				};
 				class Item321
 				{

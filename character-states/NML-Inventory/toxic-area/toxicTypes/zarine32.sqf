@@ -1,6 +1,6 @@
 [] spawn {	
 	
-	execVM "character-states\NML-Inventory\toxic-area\toxicTypes\zarine32Damage.sqf";
+	execVM "character-states\NML-Inventory\toxic-area\toxicTypes\zarine32Dose+.sqf";
 	["FilmGrain", 2000, [0.025, 0.25, 2.01, 0.75, 1.0, true], [0, 0.25, 2.01, 0.75, 1.0, true]] spawn 
 {
 	params ["_name", "_priority", "_effect", "_effect2", "_handle"];
