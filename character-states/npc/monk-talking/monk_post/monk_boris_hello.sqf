@@ -1,0 +1,11 @@
+_monk_post_guard_hello = ["britva_meet_hello_1"];
+_monk_post_guard_hello_sleep = [1];
+_rndphrase = _monk_post_guard_hello call BIS_fnc_selectRandom;
+_getsleepInd = _monk_post_guard_hello find _rndphrase;
+_getsleep = _monk_post_guard_hello_sleep select _getsleepInd;
+	monk_britva setRandomLip true;
+	monk_britva say3D _rndphrase; 
+	sleep _getsleep;
+	monk_britva setRandomLip false;
+	// [monk_post_guard_1, (_monk_post_guard_hello select floor random count _monk_post_guard_hello)] call CBA_fnc_globalSay3d;
+	sleep 10;

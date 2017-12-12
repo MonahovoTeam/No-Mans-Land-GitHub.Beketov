@@ -7,7 +7,7 @@
 	_monk_post_amb_talking_sleep_v3 = [12,11,12,9,10,16,8,10,8,6,7,22];
 	_npc_voice1 = [monk_post_guard_2,monk_sec_6,monk_np_sec_1];
 	_npc_voice2 = [monk_sec_3,monk_np_sec_1,monk_ep_sec_1];
-	_npc_voice3 = [monk_sec_4, monk_ep_sec_2];
+	_npc_voice3 = [monk_sec_4];
 	
 
 	while {monk_amb_talking == 1} do {

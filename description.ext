@@ -256,6 +256,13 @@ sound[] = {sound\character\npc\wastelanders\Monakhino\guard_hello\meet_sec_5_hel
 titles[] = {};
 };
 
+class britva_meet_hello_1
+{
+name = "britva_meet_hello_1"; // Name for mission editor
+sound[] = {sound\character\npc\wastelanders\Monakhino\guard_hello\britva_meet_hello_1.ogg, db+5, 1.0};
+titles[] = {};
+};
+
 // Ambient MONK
 
 class idle_1_1
@@ -636,13 +643,7 @@ RANDOM AMBIENT SOUNDS
 			sound[] = {sound\ambient\random\org_moan_6.ogg, 1, 1.0};
 			titles[] = {};
 		};
-	
-	class psy_voices_1_r
-		{
-			name = "psy_voices_1_r"; // Name for mission editor
-			sound[] = {sound\ambient\random\psy_voices_1_r.ogg, 1, 1.0};
-			titles[] = {};
-		};
+
 	
 	class rnd_dog3
 		{
@@ -720,6 +721,8 @@ RANDOM AMBIENT SOUNDS
 			sound[] = {sound\ambient\random\rnd_shooting_7.ogg, 1, 1.0};
 			titles[] = {};
 		};
+		
+	
 
 /* ```````````````````````````````
 
