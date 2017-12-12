@@ -5,10 +5,10 @@ class EditorData
 	angleGridStep=0.2617994;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=9;
+	toggles=1033;
 	class ItemIDProvider
 	{
-		nextID=1480;
+		nextID=1481;
 	};
 	class MarkerIDProvider
 	{
@@ -20,10 +20,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={609.57605,17.122604,4777.8638};
-		dir[]={0.86786717,-0.48344758,-0.11554711};
-		up[]={0.47951245,0.8751303,-0.063847259};
-		aside[]={-0.1319906,1.3179415e-006,-0.9912712};
+		pos[]={531.14063,40.267597,4793.1782};
+		dir[]={0.72255886,-0.56659138,0.39640465};
+		up[]={0.49696928,0.82373613,0.27263677};
+		aside[]={0.48097262,2.4403562e-006,-0.87674308};
 	};
 };
 binarizationWanted=0;
@@ -16507,7 +16507,7 @@ class Mission
 			name="Monahovo";
 			class Entities
 			{
-				items=328;
+				items=329;
 				class Item0
 				{
 					dataType="Object";
@@ -25474,7 +25474,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={622.91235,12.706124,4766.5107};
+						position[]={622.98511,12.67883,4766.1284};
 						angles[]={0,3.0586479,0};
 					};
 					side="Empty";
@@ -25485,6 +25485,7 @@ class Mission
 					};
 					id=707;
 					type="Land_Metal_Shed_F";
+					atlOffset=2.8610229e-006;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -44846,25 +44847,45 @@ class Mission
 				class Item327
 				{
 					dataType="Trigger";
-					position[]={629.20313,11.205244,4771.4414};
+					position[]={628.79077,11.205244,4771.8413};
 					angle=1.4650286;
 					class Attributes
 					{
 						condition="call{player in thislist}";
 						onActivation="call{execVM ""character-states\npc\monk-talking\monk_post\monk_boris_hello.sqf"";}";
-						sizeA=2.0832233;
-						sizeB=2.8258641;
+						sizeA=2.5241773;
+						sizeB=3.1936908;
 						repeatable=1;
 						activationBy="ANYPLAYER";
 						isRectangle=1;
 					};
 					id=1470;
 					type="EmptyDetectorAreaR50";
-					atlOffset=-0.07409668;
+					atlOffset=-0.11817741;
+				};
+				class Item328
+				{
+					dataType="Trigger";
+					position[]={617.31244,12.069654,4776.3745};
+					angle=1.6786221;
+					class Attributes
+					{
+						condition="call{player in thislist}";
+						onActivation="call{execVM ""character-states\npc\monk-talking\monk_traders\monk_bank\monk_bank_hello.sqf"";}";
+						onDeactivation="call{execVM ""character-states\npc\monk-talking\monk_traders\monk_bank\monk_bank_bye.sqf"";}";
+						sizeA=2.4060197;
+						sizeB=2.3336501;
+						repeatable=1;
+						activationBy="ANYPLAYER";
+						isRectangle=1;
+					};
+					id=1480;
+					type="EmptyDetectorAreaR50";
+					atlOffset=-0.014724731;
 				};
 			};
 			id=1356;
-			atlOffset=0.29615211;
+			atlOffset=0.18646908;
 		};
 		class Item236
 		{

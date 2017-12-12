@@ -267,7 +267,7 @@
 				<French></French>
 		    </Key>
 		    <Key ID="STR_HG_DLG_CLOSE_TOOLTIP">
-		        <Original>Закрыть текущее окно</Original>
+		        <Original>Закрыть окно</Original>
 			    <Spanish>Cerrar dialogo actual</Spanish>
 				<French>Fermer le dialogue</French>
 		    </Key>

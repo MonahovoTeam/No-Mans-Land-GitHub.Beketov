@@ -263,6 +263,34 @@ sound[] = {sound\character\npc\wastelanders\Monakhino\guard_hello\britva_meet_he
 titles[] = {};
 };
 
+class monk_bank_hello_1
+{
+name = "monk_bank_hello_1"; // Name for mission editor
+sound[] = {sound\character\npc\wastelanders\Monakhino\traders\Bank\monk_bank_hello_1.ogg, db+5, 1.0};
+titles[] = {};
+};
+
+class monk_bank_bye_1
+{
+name = "monk_bank_bye_1"; // Name for mission editor
+sound[] = {sound\character\npc\wastelanders\Monakhino\traders\Bank\monk_bank_bye_1.ogg, db+5, 1.0};
+titles[] = {};
+};
+
+class monk_bank_traded_1
+{
+name = "monk_bank_traded_1"; // Name for mission editor
+sound[] = {sound\character\npc\wastelanders\Monakhino\traders\Bank\monk_bank_traded_1.ogg, db+5, 1.0};
+titles[] = {};
+};
+
+class monk_bank_traded_2
+{
+name = "monk_bank_traded_2"; // Name for mission editor
+sound[] = {sound\character\npc\wastelanders\Monakhino\traders\Bank\monk_bank_traded_2.ogg, db+5, 1.0};
+titles[] = {};
+};
+
 // Ambient MONK
 
 class idle_1_1
