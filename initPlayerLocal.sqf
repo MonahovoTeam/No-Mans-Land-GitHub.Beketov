@@ -19,6 +19,7 @@ player addEventHandler ["InventoryClosed", {
 	execVM "character-states\NML-Inventory\inventory-close.sqf";
 }];
 
+execVM "saveSystem\saveloadout.sqf";
 execVM "character-states\NML-Inventory\PersonNameInit.sqf";
 execVM "ambient-scripts\background-sound-loops\background-sound.sqf";
 execVM "character-states\npc\monk_post_animations.sqf";

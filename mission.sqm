@@ -20,10 +20,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={666.90302,45.218925,4713.4146};
-		dir[]={-0.38261899,-0.53564823,0.75295413};
-		up[]={-0.24277619,0.84422529,0.47775441};
-		aside[]={0.8915472,5.0710514e-007,0.45304927};
+		pos[]={694.5755,22.429014,4639.9673};
+		dir[]={-0.66649824,-0.71392059,-0.21529678};
+		up[]={-0.67950737,0.69999409,-0.21950008};
+		aside[]={-0.30740502,-8.0588507e-008,0.9516331};
 	};
 };
 binarizationWanted=0;
@@ -15337,18 +15337,18 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={675.8905,8.2164268,4634.5654};
-				angles[]={0.078872949,4.2542639,0.021163318};
+				position[]={675.89099,8.2164268,4634.5649};
+				angles[]={0.078871429,4.2542577,0.021170845};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
+				name="plyHQ";
 				dynamicSimulation=1;
 			};
 			id=1246;
 			type="Land_TentDome_F";
-			atlOffset=3.4809113e-005;
 			class CustomAttributes
 			{
 				class Attribute0

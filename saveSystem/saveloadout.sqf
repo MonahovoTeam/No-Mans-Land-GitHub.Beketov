@@ -13,7 +13,7 @@ saveLoadout ={
 	_loadout = getUnitLoadout player;
 
 	// NML_pl_sv - No Man's Land Player Save
-	_savedata = [_pos, _dir, _loadout];
+	_savedata = [_pos, _dir, _loadout, NMLZrn32Dose];
 	profileNamespace setVariable ["NML_pl_sv", _savedata];
 	saveProfileNamespace;
 
@@ -44,9 +44,10 @@ loadLoadout = {
 	player setPosATL _rpos;
 	player setDir _rdir;
 	player setUnitLoadout _rloadout;
+	NMLZrn32Dose = _savedata select 3 ;
 
 	hint "Loaded";
 };
 
-player addAction ["<t color='#38BAFF'>Save Game</t>", {[] call saveLoadout;}];
-player addAction ["<t color='#38BAFF'>Load Game</t>", {[] call loadLoadout;}];
+plyHQ addAction ["<t color='#38BAFF'>Save Game</t>", {[] call saveLoadout;}];
+plyHQ addAction ["<t color='#38BAFF'>Load Game</t>", {[] call loadLoadout;}];
