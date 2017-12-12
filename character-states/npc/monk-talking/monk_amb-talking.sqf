@@ -6,8 +6,8 @@
 	_monk_post_amb_talking_sleep_v2 = [7,5,3,10,1,2,2,1,1.2,0.8,1,0.5];
 	_monk_post_amb_talking_sleep_v3 = [12,11,12,9,10,16,8,10,8,6,7,22];
 	_npc_voice1 = [monk_post_guard_2,monk_sec_6,monk_np_sec_1];
-	_npc_voice2 = [monk_sec_3,monk_np_sec_1];
-	_npc_voice3 = [monk_sec_4];
+	_npc_voice2 = [monk_sec_3,monk_np_sec_1,monk_ep_sec_1];
+	_npc_voice3 = [monk_sec_4, monk_ep_sec_2];
 	
 
 	while {monk_amb_talking == 1} do {
@@ -16,7 +16,7 @@
 		_getsleep1 = _monk_post_amb_talking_sleep_v1 select _getsleepInd1;
 		_npc_talking1 = _npc_voice1 call BIS_fnc_selectRandom;
 		_npc_talking1 setRandomLip true;
-		[_npc_talking1, _rndphrase1] call CBA_fnc_globalSay3d;
+		[_npc_talking1, _rndphrase1, 60] call CBA_fnc_globalSay3d;
 		sleep _getsleep1;
 		_npc_talking1 setRandomLip false;
 		sleep (2 + (random 5));
@@ -26,7 +26,7 @@
 		_getsleep2 = _monk_post_amb_talking_sleep_v2 select _getsleepInd2;
 		_npc_talking2 = _npc_voice2 call BIS_fnc_selectRandom;
 		_npc_talking2 setRandomLip true;
-		[_npc_talking2, _rndphrase2] call CBA_fnc_globalSay3d;
+		[_npc_talking2, _rndphrase2, 60] call CBA_fnc_globalSay3d;
 		sleep _getsleep2;
 		_npc_talking2 setRandomLip false;
 		sleep (2 + (random 5));
@@ -36,7 +36,7 @@
 		_getsleep3 = _monk_post_amb_talking_sleep_v3 select _getsleepInd3;
 		_npc_talking3 = _npc_voice3 call BIS_fnc_selectRandom;
 		_npc_talking3 setRandomLip true;
-		[_npc_talking3, _rndphrase3] call CBA_fnc_globalSay3d;
+		[_npc_talking3, _rndphrase3, 60] call CBA_fnc_globalSay3d;
 		sleep _getsleep3;
 		_npc_talking3 setRandomLip false;
 		sleep (2 + (random 5));
