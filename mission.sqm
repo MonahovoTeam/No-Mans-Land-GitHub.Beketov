@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=15;
+		nextID=17;
 	};
 	class Camera
 	{
-		pos[]={598.22076,28.837307,4694.1792};
-		dir[]={-0.074615017,-0.30415192,0.94983286};
-		up[]={-0.023841746,0.95245522,0.30356666};
-		aside[]={0.99697143,-1.1620577e-006,0.078311644};
+		pos[]={614.22412,26.770866,4828.0044};
+		dir[]={0.04892426,-0.56868607,-0.82125419};
+		up[]={0.033826441,0.82232118,-0.56792635};
+		aside[]={-0.99827683,1.0499862e-006,-0.059463087};
 	};
 };
 binarizationWanted=0;
@@ -44838,7 +44838,7 @@ class Mission
 				{
 					dataType="Trigger";
 					position[]={629.20313,11.205244,4771.4414};
-					angle=1.4650291;
+					angle=1.4650289;
 					class Attributes
 					{
 						condition="call{player in thislist}";
@@ -47887,8 +47887,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={630.71765,11.129973,4770.0811};
-						angles[]={0,5.5707493,0};
+						position[]={630.71802,11.129939,4770.0806};
+						angles[]={0,5.5707417,0};
 					};
 					side="Independent";
 					flags=7;
@@ -47982,7 +47982,6 @@ class Mission
 					};
 					id=1465;
 					type="LOP_UKR_Infantry_crew";
-					atlOffset=-2.3841858e-005;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -48440,9 +48439,33 @@ class Mission
 			};
 			class Attributes
 			{
+				speedMode="LIMITED";
+				dynamicSimulation=1;
 			};
 			id=1466;
-			atlOffset=-2.3841858e-005;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="groupID";
+					expression="[_this, _value] call CBA_fnc_setCallsign";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="Егерь";
+						};
+					};
+				};
+				nAttributes=1;
+			};
 		};
 		class Item252
 		{
