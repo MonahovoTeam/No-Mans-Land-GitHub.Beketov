@@ -19,24 +19,34 @@ switch(_mode) do
     // Deposit
     case 0:
 	{
-	    if(_amount > (player getVariable "HG_Cash")) exitWith {hint (localize "STR_HG_ATM_CANNOT_DEPOSIT"); execVM "character-states\npc\monk-talking\monk_traders\monk_bank\monk_bank_noMoney.sqf";};
+	    if(_amount > (player getVariable "HG_Cash")) exitWith {hint (localize "STR_HG_ATM_CANNOT_DEPOSIT"); 
+			if (player distance atm_monk < 20) exitWith {
+				execVM "character-states\npc\monk-talking\monk_traders\monk_bank\monk_bank_noMoney.sqf";
+			};
+		};
 		
 	    [_amount,1] call HG_fnc_addOrSubCash;
 		[_amount,0,1] call HG_fnc_addOrSubCash;
 		
 		hint format[(localize "STR_HG_ATM_DEPOSITED"),([_amount,true] call HG_fnc_currencyToText)];
-		execVM "character-states\npc\monk-talking\monk_traders\monk_bank\monk_bank_yesMoney.sqf";
+		if (player distance atm_monk < 20) exitWith {
+				execVM "character-states\npc\monk-talking\monk_traders\monk_bank\monk_bank_yesMoney.sqf";
+			};
 	};
 	// Withdraw
 	case 1:
 	{
-	    if(_amount > (player getVariable "HG_Bank")) exitWith {hint (localize "STR_HG_ATM_CANNOT_WITHDRAW"); execVM "character-states\npc\monk-talking\monk_traders\monk_bank\monk_bank_noMoney.sqf";};
+	    if(_amount > (player getVariable "HG_Bank")) exitWith {hint (localize "STR_HG_ATM_CANNOT_WITHDRAW"); if (player distance atm_monk < 20) exitWith {
+				execVM "character-states\npc\monk-talking\monk_traders\monk_bank\monk_bank_noMoney.sqf";
+			};};
 		
 	    [_amount,0] call HG_fnc_addOrSubCash;
 		[_amount,1,1] call HG_fnc_addOrSubCash;
 		
 		hint format[(localize "STR_HG_ATM_WITHDRAWN"),([_amount,true] call HG_fnc_currencyToText)];
-		execVM "character-states\npc\monk-talking\monk_traders\monk_bank\monk_bank_yesMoney.sqf";
+		if (player distance atm_monk < 20) exitWith {
+				execVM "character-states\npc\monk-talking\monk_traders\monk_bank\monk_bank_yesMoney.sqf";
+			};
 	};
 	// Transfer
 	case 2:

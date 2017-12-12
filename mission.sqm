@@ -20,10 +20,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={531.14063,40.267597,4793.1782};
-		dir[]={0.72255886,-0.56659138,0.39640465};
-		up[]={0.49696928,0.82373613,0.27263677};
-		aside[]={0.48097262,2.4403562e-006,-0.87674308};
+		pos[]={503.02649,75.975349,4749.7603};
+		dir[]={0.7931115,-0.60926312,0.004059067};
+		up[]={0.60948426,0.79269403,0.0031148812};
+		aside[]={0.0051047392,2.5905902e-006,-0.99999088};
 	};
 };
 binarizationWanted=0;
@@ -16482,13 +16482,13 @@ class Mission
 		class Item233
 		{
 			dataType="Marker";
-			position[]={694.12,9.2349997,4616.1182};
+			position[]={677.39258,7.8311768,4631.5005};
 			name="marker_59";
 			text="Наш лагерь";
 			type="hd_dot";
 			colorName="ColorGreen";
 			id=1351;
-			atlOffset=-0.00015354156;
+			atlOffset=-0.073340416;
 		};
 		class Item234
 		{
@@ -44867,7 +44867,7 @@ class Mission
 				{
 					dataType="Trigger";
 					position[]={617.31244,12.069654,4776.3745};
-					angle=1.6786221;
+					angle=1.678622;
 					class Attributes
 					{
 						condition="call{player in thislist}";
