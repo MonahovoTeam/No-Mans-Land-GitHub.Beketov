@@ -1,5 +1,3 @@
-[] spawn {
-
 	call {
 		// No Dose
 		if (NMLZrn32Dose >= 0 && NMLZrn32Dose <= 10) exitWith {
@@ -56,6 +54,3 @@
 			[2.1] call NMLHealth_fnc_giveKidneyDamage;
 		};
 	};
-
-
-};
