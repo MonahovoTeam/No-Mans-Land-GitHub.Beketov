@@ -13,7 +13,7 @@ saveLoadout ={
 	_loadout = getUnitLoadout player;
 
 	// NML_pl_sv - No Man's Land Player Save
-	_savedata = [_pos, _dir, _loadout, NMLZrn32Dose];
+	_savedata = [_pos, _dir, _loadout, NMLZrn32Dose, NMLBrDmg, NMLGaDmg, NMLLuDmg, NMLNeDmg, NMLKdDmg];
 	profileNamespace setVariable ["NML_pl_sv", _savedata];
 	saveProfileNamespace;
 
@@ -45,6 +45,11 @@ loadLoadout = {
 	player setDir _rdir;
 	player setUnitLoadout _rloadout;
 	NMLZrn32Dose = _savedata select 3 ;
+	NMLBrDmg = _savedata select 4 ;
+	NMLGaDmg = _savedata select 5 ;
+	NMLLuDmg = _savedata select 6 ;
+	NMLNeDmg = _savedata select 7 ;
+	NMLKdDmg = _savedata select 8 ;
 
 	hint "Loaded";
 };
