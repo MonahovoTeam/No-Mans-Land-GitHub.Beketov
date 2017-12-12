@@ -5,10 +5,10 @@ class EditorData
 	angleGridStep=0.2617994;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=1033;
+	toggles=9;
 	class ItemIDProvider
 	{
-		nextID=1475;
+		nextID=1480;
 	};
 	class MarkerIDProvider
 	{
@@ -20,10 +20,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={733.94904,37.233788,4655.8521};
-		dir[]={-0.77732277,-0.58360231,-0.235451};
-		up[]={-0.55877143,0.81180423,-0.16924743};
-		aside[]={-0.28990218,1.1247757e-006,0.95710701};
+		pos[]={608.21387,23.54372,4793.6323};
+		dir[]={0.37693316,-0.53613311,-0.75547481};
+		up[]={0.23947263,0.84389293,-0.47997814};
+		aside[]={-0.8948372,2.5310183e-006,-0.44645295};
 	};
 };
 binarizationWanted=0;
@@ -150,13 +150,17 @@ addons[]=
 	"A3_Characters_F_Exp_Vests",
 	"skn_nbc_units",
 	"po_factions_fic",
-	"A3_Structures_F_System"
+	"A3_Structures_F_System",
+	"A3_Weapons_F_Pistols_Pistol_Heavy_02",
+	"ace_realisticnames",
+	"ace_ballistics",
+	"ace_goggles"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=94;
+		items=96;
 		class Item0
 		{
 			className="A3_Structures_F_Wrecks";
@@ -774,6 +778,20 @@ class AddonsMetaData
 			name="po_factions_fic";
 			author="Leight, Keeway";
 		};
+		class Item94
+		{
+			className="ace_ballistics";
+			name="ACE3 - Ballistics";
+			author="ACE-Team";
+			url="http://ace3mod.com/";
+		};
+		class Item95
+		{
+			className="ace_goggles";
+			name="ACE3 - Goggles";
+			author="ACE-Team";
+			url="http://ace3mod.com/";
+		};
 	};
 };
 class DynamicSimulation
@@ -1124,7 +1142,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=256;
+		items=257;
 		class Item0
 		{
 			dataType="Object";
@@ -31666,7 +31684,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={618.61072,13.137324,4775.8965};
+						position[]={618.53571,13.145012,4775.9941};
 						angles[]={0,4.8075395,0};
 					};
 					side="Empty";
@@ -31677,7 +31695,7 @@ class Mission
 					};
 					id=831;
 					type="Land_WoodenShelter_01_F";
-					atlOffset=2.8610229e-006;
+					atlOffset=2.3841858e-005;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -48660,6 +48678,578 @@ class Mission
 					};
 				};
 				nAttributes=2;
+			};
+		};
+		class Item256
+		{
+			dataType="Group";
+			side="Independent";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={618.34814,12.046603,4776.2002};
+						angles[]={0,4.7520604,0};
+					};
+					side="Independent";
+					flags=7;
+					class Attributes
+					{
+						name="atm_monk";
+						ignoreByDynSimulGrid=1;
+						class Inventory
+						{
+							class handgun
+							{
+								name="hgun_Pistol_heavy_02_F";
+								class primaryMuzzleMag
+								{
+									name="6Rnd_45ACP_Cylinder";
+									ammoLeft=6;
+								};
+							};
+							class uniform
+							{
+								typeName="LOP_U_UA_Fatigue_02";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="6Rnd_45ACP_Cylinder";
+										count=3;
+										ammoLeft=6;
+									};
+								};
+							};
+							class vest
+							{
+								typeName="V_Rangemaster_belt";
+								isBackpack=0;
+							};
+							class backpack
+							{
+								typeName="B_Messenger_Olive_F";
+								isBackpack=1;
+							};
+							map="ItemMap";
+							compass="ItemCompass";
+							watch="ItemWatch";
+							radio="ItemRadio";
+							goggles="G_Aviator";
+							headgear="rhs_beret_vdv2";
+						};
+					};
+					id=1478;
+					type="LOP_UKR_Infantry_Rifleman";
+					atlOffset=2.3841858e-005;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="Enh_doStop";
+							expression="if (!is3DEN && _value) then {doStop _this}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=1;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="Enh_disableAI_target";
+							expression="_this disableAI 'TARGET'";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="Enh_forceWalk";
+							expression="_this forceWalk _value";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=1;
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="allowDamage";
+							expression="_this allowdamage _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute4
+						{
+							property="Enh_disableAI_suppression";
+							expression="_this disableAI 'SUPPRESSION'";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute5
+						{
+							property="enableStamina";
+							expression="_this enablestamina _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute6
+						{
+							property="Enh_disableAI_teamswitch";
+							expression="_this disableAI 'TEAMSWITCH'";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute7
+						{
+							property="face";
+							expression="_this setface _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="GreekHead_A3_06";
+								};
+							};
+						};
+						class Attribute8
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="ACE_NoVoice";
+								};
+							};
+						};
+						class Attribute9
+						{
+							property="Enh_ambientAnimParams";
+							expression="	if (is3DEN) then {_this call BIS_fnc_ambientAnim__terminate};	[_this,_value] spawn	{		sleep 0.1;		private _unit = _this select 0;		private _value = _this select 1;		if (!(_value select 0 == '') && !isMultiplayer) then		{			[_unit,_value select 0,_value select 1,objNull,false,false] call BIS_fnc_ambientAnim;		};	}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"ARRAY"
+										};
+									};
+									class value
+									{
+										items=2;
+										class Item0
+										{
+											class data
+											{
+												class type
+												{
+													type[]=
+													{
+														"STRING"
+													};
+												};
+												value="";
+											};
+										};
+										class Item1
+										{
+											class data
+											{
+												class type
+												{
+													type[]=
+													{
+														"STRING"
+													};
+												};
+												value="ASIS";
+											};
+										};
+									};
+								};
+							};
+						};
+						class Attribute10
+						{
+							property="Enh_disableAI_autotarget";
+							expression="_this disableAI 'AUTOTARGET'";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute11
+						{
+							property="Enh_disableAI_path";
+							expression="_this disableAI 'PATH'";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute12
+						{
+							property="unitName";
+							expression="_this setname _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Рустам Банкир";
+								};
+							};
+						};
+						class Attribute13
+						{
+							property="Enh_disableAI_FSM";
+							expression="_this disableAI 'FSM'";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute14
+						{
+							property="Enh_disableAI_mineDetection";
+							expression="_this disableAI 'MINEDETECTION'";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute15
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.99000001;
+								};
+							};
+						};
+						class Attribute16
+						{
+							property="Enh_featureType";
+							expression="_this setFeatureType (parseNumber _value)";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="0";
+								};
+							};
+						};
+						class Attribute17
+						{
+							property="Enh_disableAI_aimingError";
+							expression="_this disableAI 'AIMINGERROR'";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute18
+						{
+							property="Enh_disableAI_cover";
+							expression="_this disableAI 'COVER'";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute19
+						{
+							property="Enh_disableAI_autocombat";
+							expression="_this disableAI 'AUTOCOMBAT'";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute20
+						{
+							property="Enh_allowSprint";
+							expression="_this allowSprint _value";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute21
+						{
+							property="Enh_disableAI_checkVisible";
+							expression="_this disableAI 'CHECKVISIBLE'";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute22
+						{
+							property="Enh_disableAI_move";
+							expression="_this disableAI 'MOVE'";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=23;
+					};
+				};
+			};
+			class Attributes
+			{
+				dynamicSimulation=1;
+			};
+			id=1479;
+			atlOffset=2.3841858e-005;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="groupID";
+					expression="[_this, _value] call CBA_fnc_setCallsign";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="Банкир";
+						};
+					};
+				};
+				nAttributes=1;
 			};
 		};
 	};
