@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=21;
+		nextID=23;
 	};
 	class Camera
 	{
-		pos[]={612.71661,15.342648,4776.8223};
-		dir[]={0.90861648,-0.4141793,-0.055990424};
-		up[]={0.41371489,0.90998155,-0.02549877};
-		aside[]={-0.061518218,7.8015364e-007,-0.99813122};
+		pos[]={609.57605,17.122604,4777.8638};
+		dir[]={0.86786717,-0.48344758,-0.11554711};
+		up[]={0.47951245,0.8751303,-0.063847259};
+		aside[]={-0.1319906,1.3179415e-006,-0.9912712};
 	};
 };
 binarizationWanted=0;
@@ -38368,7 +38368,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={608.22101,17.617956,4837.7778};
+						position[]={607.96295,17.665838,4838.3311};
 						angles[]={0,1.7653308,0};
 					};
 					side="Empty";
@@ -38379,6 +38379,7 @@ class Mission
 					};
 					id=1303;
 					type="Land_Cargo_House_V2_F";
+					atlOffset=4.9591064e-005;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -44863,7 +44864,7 @@ class Mission
 				};
 			};
 			id=1356;
-			atlOffset=0.29615116;
+			atlOffset=0.29615211;
 		};
 		class Item236
 		{

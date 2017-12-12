@@ -262,12 +262,12 @@
 	<Package name="Dialogs">
 	    <Container name="General">
 		    <Key ID="STR_HG_DLG_TOOLTIP">
-		        <Original>[HG] Simple Shops</Original>
-			    <Spanish>[HG] Simple Shops</Spanish>
-				<French>[HG] Simple Shops</French>
+		        <Original></Original>
+			    <Spanish></Spanish>
+				<French></French>
 		    </Key>
 		    <Key ID="STR_HG_DLG_CLOSE_TOOLTIP">
-		        <Original>Close current dialog</Original>
+		        <Original>Закрыть текущее окно</Original>
 			    <Spanish>Cerrar dialogo actual</Spanish>
 				<French>Fermer le dialogue</French>
 		    </Key>
@@ -399,65 +399,65 @@
 		</Container>
 		<Container name="ATM">
 		    <Key ID="STR_HG_ATM_ACC_TITLE">
-		        <Original>Account</Original>
+		        <Original>Ваш счет</Original>
 				<Spanish>Cuenta</Spanish>
 				<French>Compte</French>
 			</Key>
 		    <Key ID="STR_HG_ATM_CASH_TITLE">
-		        <Original>Cash</Original>
+		        <Original>Ваша наличка</Original>
 				<Spanish>Dinero</Spanish>
 				<French>Argent</French>
 			</Key>
 		    <Key ID="STR_HG_ATM_DEPOSIT_TOOLTIP">
-			    <Original>Deposit</Original>
+			    <Original>Положить деньги</Original>
 				<Spanish>Depósito</Spanish>
 				<French>Déposer</French>
 			</Key>
 		    <Key ID="STR_HG_ATM_WITHDRAW_TOOLTIP">
-			    <Original>Withdraw</Original>
+			    <Original>Забрать деньги</Original>
 				<Spanish>Retirarse</Spanish>
 				<French>Retirer</French>
 			</Key>
 			<Key ID="STR_HG_ATM_TRANSFER_TOOLTIP">
-			    <Original>Transfer</Original>
+			    <Original>Перевести</Original>
 				<Spanish>Transferir</Spanish>
 				<French>Transférer</French>
 			</Key>
 			<Key ID="STR_HG_ATM_REFRESH_TOOLTIP">
-			    <Original>Refresh</Original>
+			    <Original>Обновить</Original>
 				<Spanish>Refrescar</Spanish>
 				<French>Rafraîchir</French>
 			</Key>
 			<Key ID="STR_HG_ATM_NO_PLAYERS">
-			    <Original>No online players</Original>
+			    <Original>Нет игроков в сети</Original>
 				<Spanish>Ningún jugador</Spanish>
 				<French>Aucun joueur en ligne</French>
 			</Key>
 			<Key ID="STR_HG_ATM_DEPOSITED">
-			    <Original>You have deposited %1</Original>
+			    <Original>Вы положили на счет %1 рублей.</Original>
 				<Spanish>Usted ha depositado %1</Spanish>
 				<French>Vous avez déposé %1</French>
 			</Key>
 			<Key ID="STR_HG_ATM_WITHDRAWN">
-			    <Original>You have withdrawn %1</Original>
+			    <Original>Вы сняли со счета %1 рублей.</Original>
 				<Spanish>Usted ha retirado %1</Spanish>
 				<French>Vous avez retiré %1</French>
 			</Key>
 			<Key ID="STR_HG_ATM_TRANSFERED">
-			    <Original>You have transfered %1 to %2</Original>
+			    <Original>Вы перевели %1 рублей на счет %2.</Original>
 				<Spanish>Usted ha transferido %1 a %2</Spanish>
 				<French>Vous avez transféré %1 à %2</French>
 			</Key>
 			<Key ID="STR_HG_ATM_TRANSFER_RECEIVED">
-			    <Original>You have received a bank transfer from %1 (%2)</Original>
+			    <Original>Вы получили перевод у Банкира от %1 (%2 рублей).</Original>
 				<French>Vous avez reçu un transfer d'argent de %1 (%2)</French>
 			</Key>
 			<Key ID="STR_HG_ATM_CANNOT_DEPOSIT">
-			    <Original>You cannot deposit more than what you have</Original>
+			    <Original>Вы не можете положить на счет больше, чем у вас есть.</Original>
 				<French>Vous ne pouvez pas déposer plus que ce que vous possédez</French>
 			</Key>
 			<Key ID="STR_HG_ATM_CANNOT_WITHDRAW">
-			    <Original>You cannot withdraw more than what you have</Original>
+			    <Original>Вы не можете снять со счета больше, чем у вас есть.</Original>
 				<French>Vous ne pouvez pas retirer plus que ce que vous possédez</French>
 			</Key>
 		</Container>

@@ -15,9 +15,18 @@ class HG_ATM
 	
 	class ControlsBackground
 	{
+		/* class Header: HG_RscText
+		{
+			colorBackground[] = {0.60000,0.60000,0.40000,1};
+			x = 0.391719 * safezoneW + safezoneX;
+			y = 0.302 * safezoneH + safezoneY;
+			w = 0.216563 * safezoneW;
+			h = 0.044 * safeZoneH;
+		}; */
+		
 		class Header: HG_RscText
 		{
-			colorBackground[] = {0.4,0.4,0.4,1};
+			colorBackground[] = {0.36471,0.30588,0.23529,1};
 			x = 0.391719 * safezoneW + safezoneX;
 			y = 0.302 * safezoneH + safezoneY;
 			w = 0.216563 * safezoneW;
@@ -26,7 +35,7 @@ class HG_ATM
 		
 		class Background: HG_RscText
 		{
-			colorBackground[] = {0,0,0,0.5};
+			colorBackground[] = {0,0,0,0.6};
 			x = 0.391719 * safezoneW + safezoneX;
 		    y = 0.346 * safezoneH + safezoneY;
 		    w = 0.216563 * safezoneW;
@@ -50,7 +59,7 @@ class HG_ATM
 			h = 0.0022 * safeZoneH;
 		};
 		
-		class MainPicture: HG_RscPicture
+		/* class MainPicture: HG_RscPicture
 		{
 			moving = true;
 			text = "HG\UI\Icons\atm.paa";
@@ -59,7 +68,7 @@ class HG_ATM
 			y = 0.302 * safezoneH + safezoneY;
 			w = 0.0309375 * safeZoneW;
 			h = 0.044 * safeZoneH;
-		};
+		}; */
 		
 		class ExitBtnPicture: HG_RscPicture
 		{
