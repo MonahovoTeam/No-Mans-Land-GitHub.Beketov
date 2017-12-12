@@ -1,4 +1,4 @@
-_monk_post_guard_hello = ["britva_meet_hello_1"];
+_monk_post_guard_hello = ["britva_meet_hello_2"];
 _monk_post_guard_hello_sleep = [1];
 _rndphrase = _monk_post_guard_hello call BIS_fnc_selectRandom;
 _getsleepInd = _monk_post_guard_hello find _rndphrase;

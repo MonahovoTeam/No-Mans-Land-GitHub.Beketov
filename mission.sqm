@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=19;
+		nextID=21;
 	};
 	class Camera
 	{
-		pos[]={608.21387,23.54372,4793.6323};
-		dir[]={0.37693316,-0.53613311,-0.75547481};
-		up[]={0.23947263,0.84389293,-0.47997814};
-		aside[]={-0.8948372,2.5310183e-006,-0.44645295};
+		pos[]={612.71661,15.342648,4776.8223};
+		dir[]={0.90861648,-0.4141793,-0.055990424};
+		up[]={0.41371489,0.90998155,-0.02549877};
+		aside[]={-0.061518218,7.8015364e-007,-0.99813122};
 	};
 };
 binarizationWanted=0;
@@ -151,16 +151,13 @@ addons[]=
 	"skn_nbc_units",
 	"po_factions_fic",
 	"A3_Structures_F_System",
-	"A3_Weapons_F_Pistols_Pistol_Heavy_02",
-	"ace_realisticnames",
-	"ace_ballistics",
 	"ace_goggles"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=96;
+		items=95;
 		class Item0
 		{
 			className="A3_Structures_F_Wrecks";
@@ -779,13 +776,6 @@ class AddonsMetaData
 			author="Leight, Keeway";
 		};
 		class Item94
-		{
-			className="ace_ballistics";
-			name="ACE3 - Ballistics";
-			author="ACE-Team";
-			url="http://ace3mod.com/";
-		};
-		class Item95
 		{
 			className="ace_goggles";
 			name="ACE3 - Goggles";
@@ -48692,7 +48682,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={618.34814,12.046603,4776.2002};
+						position[]={618.46301,12.043429,4776.1958};
 						angles[]={0,4.7520604,0};
 					};
 					side="Independent";
@@ -48703,51 +48693,22 @@ class Mission
 						ignoreByDynSimulGrid=1;
 						class Inventory
 						{
-							class handgun
-							{
-								name="hgun_Pistol_heavy_02_F";
-								class primaryMuzzleMag
-								{
-									name="6Rnd_45ACP_Cylinder";
-									ammoLeft=6;
-								};
-							};
 							class uniform
 							{
-								typeName="LOP_U_UA_Fatigue_02";
+								typeName="LOP_U_IRA_Fatigue_HTR_BLK";
 								isBackpack=0;
-								class MagazineCargo
-								{
-									items=1;
-									class Item0
-									{
-										name="6Rnd_45ACP_Cylinder";
-										count=3;
-										ammoLeft=6;
-									};
-								};
-							};
-							class vest
-							{
-								typeName="V_Rangemaster_belt";
-								isBackpack=0;
-							};
-							class backpack
-							{
-								typeName="B_Messenger_Olive_F";
-								isBackpack=1;
 							};
 							map="ItemMap";
 							compass="ItemCompass";
-							watch="ItemWatch";
-							radio="ItemRadio";
-							goggles="G_Aviator";
-							headgear="rhs_beret_vdv2";
+							watch="tf_microdagr";
+							radio="tf_anprc148jem_1";
+							goggles="G_Spectacles_Tinted";
+							headgear="H_Hat_tan";
 						};
 					};
 					id=1478;
 					type="LOP_UKR_Infantry_Rifleman";
-					atlOffset=2.3841858e-005;
+					atlOffset=9.5367432e-007;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -48898,7 +48859,7 @@ class Mission
 											"STRING"
 										};
 									};
-									value="GreekHead_A3_06";
+									value="O_Colonel";
 								};
 							};
 						};
@@ -49024,7 +48985,7 @@ class Mission
 											"STRING"
 										};
 									};
-									value="Рустам Банкир";
+									value="Ашот Банкир";
 								};
 							};
 						};
@@ -49227,7 +49188,7 @@ class Mission
 				dynamicSimulation=1;
 			};
 			id=1479;
-			atlOffset=2.3841858e-005;
+			atlOffset=9.5367432e-007;
 			class CustomAttributes
 			{
 				class Attribute0

@@ -256,10 +256,10 @@ sound[] = {sound\character\npc\wastelanders\Monakhino\guard_hello\meet_sec_5_hel
 titles[] = {};
 };
 
-class britva_meet_hello_1
+class britva_meet_hello_2
 {
-name = "britva_meet_hello_1"; // Name for mission editor
-sound[] = {sound\character\npc\wastelanders\Monakhino\guard_hello\britva_meet_hello_1.ogg, db+5, 1.0};
+name = "britva_meet_hello_2"; // Name for mission editor
+sound[] = {sound\character\npc\wastelanders\Monakhino\guard_hello\britva_meet_hello_2.ogg, db+5, 1.0};
 titles[] = {};
 };
 
